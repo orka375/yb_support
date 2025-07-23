@@ -1,0 +1,34 @@
+{
+  "package_name": "tutorial_interfaces",
+  "output_dir": "/home/nbf2/support/tutorial_interfaces/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces",
+  "template_dir": "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/home/nbf2/support/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
+    "/home/nbf2/support/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/rolling/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/rolling/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/rolling/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/opt/ros/rolling/lib/python3.12/site-packages/rosidl_generator_py/__init__.py",
+    "/opt/ros/rolling/lib/python3.12/site-packages/rosidl_generator_py/generate_py_impl.py",
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/nbf2/support/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl",
+    "/home/nbf2/support/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl",
+    "/opt/ros/rolling/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/rolling/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/rolling/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

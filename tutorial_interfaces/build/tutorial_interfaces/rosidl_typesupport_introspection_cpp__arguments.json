@@ -1,0 +1,29 @@
+{
+  "package_name": "tutorial_interfaces",
+  "output_dir": "/home/nbf2/support/tutorial_interfaces/build/tutorial_interfaces/rosidl_typesupport_introspection_cpp/tutorial_interfaces",
+  "template_dir": "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/home/nbf2/support/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
+    "/home/nbf2/support/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/rolling/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/rolling/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/rolling/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/rolling/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/opt/ros/rolling/lib/python3.12/site-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/rolling/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/home/nbf2/support/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl",
+    "/home/nbf2/support/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl",
+    "/opt/ros/rolling/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/rolling/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/rolling/share/builtin_interfaces/msg/Time.idl"
+  ]
+}
