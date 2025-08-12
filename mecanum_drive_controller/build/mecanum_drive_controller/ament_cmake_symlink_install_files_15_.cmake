@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/fabian/yb_support/mecanum_drive_controller" FILES "/home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/controller_interface__pluginlib__plugin")
