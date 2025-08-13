@@ -1,0 +1,4 @@
+Invoking command in '/home/fabian/unilidar_sdk2/build/unitree_lidar_sdk': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fabian/unilidar_sdk2/unitree_lidar_sdk -DCMAKE_INSTALL_PREFIX=/home/fabian/unilidar_sdk2/install/unitree_lidar_sdk
+Invoked command in '/home/fabian/unilidar_sdk2/build/unitree_lidar_sdk' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fabian/unilidar_sdk2/unitree_lidar_sdk -DCMAKE_INSTALL_PREFIX=/home/fabian/unilidar_sdk2/install/unitree_lidar_sdk
+Invoking command in '/home/fabian/unilidar_sdk2/build/unitree_lidar_sdk': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/unilidar_sdk2/build/unitree_lidar_sdk -- -j7 -l7
+Invoked command in '/home/fabian/unilidar_sdk2/build/unitree_lidar_sdk' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/unilidar_sdk2/build/unitree_lidar_sdk -- -j7 -l7

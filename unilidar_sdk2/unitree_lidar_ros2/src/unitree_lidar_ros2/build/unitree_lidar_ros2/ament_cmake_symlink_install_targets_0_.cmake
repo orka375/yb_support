@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/fabian/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/unitree_lidar_ros2_node" "TARGETS" "unitree_lidar_ros2_node" "DESTINATION" "lib/unitree_lidar_ros2")

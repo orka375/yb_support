@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/fabian/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2" FILES "/home/fabian/unilidar_sdk2/build/unitree_lidar_ros2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/unitree_lidar_ros2" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

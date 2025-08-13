@@ -1,0 +1,1 @@
+/home/fabian/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_environment_hooks/local_setup.zsh
