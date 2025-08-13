@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/fabian/yb_support/pointcloud_to_laserscan" FILES "/opt/ros/rolling/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/pointcloud_to_laserscan/environment")
