@@ -55,6 +55,3 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
-
-# uninstall files installed using the symlink install functions
-include("/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")

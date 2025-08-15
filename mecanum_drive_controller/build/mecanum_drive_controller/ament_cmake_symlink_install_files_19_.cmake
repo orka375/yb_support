@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/fabian/yb_support/mecanum_drive_controller" FILES "/home/fabian/yb_support/mecanum_drive_controller/package.xml" "DESTINATION" "share/mecanum_drive_controller")

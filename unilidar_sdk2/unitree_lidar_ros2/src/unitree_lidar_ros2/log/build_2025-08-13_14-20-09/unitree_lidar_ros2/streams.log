@@ -1,0 +1,132 @@
+[0.018s] Invoking command in '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2
+[0.216s] -- The C compiler identification is GNU 13.3.0
+[1.172s] -- The CXX compiler identification is GNU 13.3.0
+[2.074s] -- Detecting C compiler ABI info
+[2.453s] -- Detecting C compiler ABI info - done
+[2.463s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.463s] -- Detecting C compile features
+[2.464s] -- Detecting C compile features - done
+[2.604s] -- Detecting CXX compiler ABI info
+[3.027s] -- Detecting CXX compiler ABI info - done
+[3.037s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.037s] -- Detecting CXX compile features
+[3.038s] -- Detecting CXX compile features - done
+[3.046s] -- Found ament_cmake: 2.7.2 (/opt/ros/rolling/share/ament_cmake/cmake)
+[3.274s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.358s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.475s] -- Found rclcpp: 29.4.0 (/opt/ros/rolling/share/rclcpp/cmake)
+[3.792s] -- Found rosidl_generator_c: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+[3.825s] -- Found rosidl_generator_cpp: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+[3.862s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.902s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.047s] -- Found rmw_implementation_cmake: 7.8.1 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)
+[4.056s] -- Found rmw_fastrtps_cpp: 9.3.1 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)
+[4.208s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.223s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.550s] -- Found std_msgs: 5.5.0 (/opt/ros/rolling/share/std_msgs/cmake)
+[4.574s] -- Found geometry_msgs: 5.5.0 (/opt/ros/rolling/share/geometry_msgs/cmake)
+[4.599s] -- Found pcl_conversions: 2.6.3 (/opt/ros/rolling/share/pcl_conversions/cmake)
+[4.783s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[4.783s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[4.783s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[4.783s]   cmake_policy command to set the policy and suppress this warning.
+[4.783s] 
+[4.783s]   CMake variable FLANN_ROOT is set to:
+[4.783s] 
+[4.784s]     /usr
+[4.784s] 
+[4.784s]   For compatibility, find_package is ignoring the variable, but code in a
+[4.784s]   .cmake module might still use it.
+[4.784s] Call Stack (most recent call first):
+[4.784s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[4.784s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[4.784s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[4.784s]   /opt/ros/rolling/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[4.784s]   /opt/ros/rolling/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[4.784s]   CMakeLists.txt:22 (find_package)
+[4.784s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.785s] [0m
+[4.785s] -- Found flann version 1.9.2
+[5.623s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[5.624s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[22.599s] -- Checking for module 'libusb-1.0'
+[22.623s] --   Found libusb-1.0, version 1.0.27
+[22.824s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[22.825s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[23.174s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[23.365s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[24.520s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  
+[25.478s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.43") 
+[39.269s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[39.277s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[52.922s] -- Found Qhull version 8.0.2
+[66.557s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[80.304s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[80.305s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[80.306s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[80.307s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[80.308s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[80.309s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[80.310s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[80.310s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[80.311s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[80.313s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[80.314s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[80.315s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[80.316s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[80.317s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[80.318s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[80.320s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[80.321s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[80.322s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[80.323s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[80.324s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[80.325s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[80.326s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[80.326s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[80.327s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[80.328s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[80.332s] [33mCMake Warning (dev) at CMakeLists.txt:23 (find_package):
+[80.332s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[80.332s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[80.332s]   command to set the policy and suppress this warning.
+[80.332s] 
+[80.333s]   CMake variable PCL_ROOT is set to:
+[80.333s] 
+[80.333s]     /usr
+[80.333s] 
+[80.333s]   For compatibility, CMake is ignoring the variable.
+[80.333s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[80.333s] [0m
+[80.349s] -- Found tf2_ros: 0.40.1 (/opt/ros/rolling/share/tf2_ros/cmake)
+[80.668s] -- Configuring done (80.6s)
+[80.753s] -- Generating done (0.1s)
+[80.761s] -- Build files have been written to: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2
+[80.795s] Invoked command in '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2
+[80.798s] Invoking command in '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2 -- -j7 -l7
+[80.893s] [ 50%] [32mBuilding CXX object CMakeFiles/unitree_lidar_ros2_node.dir/src/unitree_lidar_ros2_node.cpp.o[0m
+[97.524s] [100%] [32m[1mLinking CXX executable unitree_lidar_ros2_node[0m
+[98.322s] [100%] Built target unitree_lidar_ros2_node
+[98.340s] Invoked command in '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2 -- -j7 -l7
+[98.356s] Invoking command in '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2
+[98.368s] -- Install configuration: ""
+[98.369s] -- Execute custom install script
+[98.370s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/lib/unitree_lidar_ros2/unitree_lidar_ros2_node
+[98.385s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/view.rviz
+[98.400s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/launch.py
+[98.415s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/ament_index/resource_index/package_run_dependencies/unitree_lidar_ros2
+[98.431s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/ament_index/resource_index/parent_prefix_path/unitree_lidar_ros2
+[98.446s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.sh
+[98.461s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.dsv
+[98.476s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.sh
+[98.490s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.dsv
+[98.506s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.bash
+[98.520s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.sh
+[98.535s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.zsh
+[98.550s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.dsv
+[98.565s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.dsv
+[98.580s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/ament_index/resource_index/packages/unitree_lidar_ros2
+[98.595s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config.cmake
+[98.610s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config-version.cmake
+[98.624s] -- Symlinking: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.xml
+[98.644s] Invoked command in '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2

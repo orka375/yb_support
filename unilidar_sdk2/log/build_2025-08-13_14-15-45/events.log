@@ -1,0 +1,1126 @@
+[0.000000] (-) TimerEvent: {}
+[0.001041] (unitree_lidar_ros) JobQueued: {'identifier': 'unitree_lidar_ros', 'dependencies': OrderedDict()}
+[0.001235] (unitree_lidar_ros2) JobQueued: {'identifier': 'unitree_lidar_ros2', 'dependencies': OrderedDict()}
+[0.001292] (unitree_lidar_sdk) JobQueued: {'identifier': 'unitree_lidar_sdk', 'dependencies': OrderedDict()}
+[0.001344] (unitree_lidar_ros) JobStarted: {'identifier': 'unitree_lidar_ros'}
+[0.026560] (unitree_lidar_ros2) JobStarted: {'identifier': 'unitree_lidar_ros2'}
+[0.041570] (unitree_lidar_sdk) JobStarted: {'identifier': 'unitree_lidar_sdk'}
+[0.056393] (unitree_lidar_ros) JobProgress: {'identifier': 'unitree_lidar_ros', 'progress': 'cmake'}
+[0.059532] (unitree_lidar_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros/src/unitree_lidar_ros', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_ros'], 'cwd': '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_ros', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fabian', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/lib:/home/fabian/ros2_ws/install/ros2_control_demo_example_2/lib:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller/lib:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/fabian', 'OLDPWD': '/home/fabian/yb_support', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install:/home/fabian/yb_lidar/unitree_lidar_ros2/install:/home/fabian/yb_ros_odrive/odrive_ros2_control/install:/home/fabian/yb_support/mecanum_drive_controller/install:/home/fabian/yb_support/twist_stamper/install:/home/fabian/ros2_ws/install:/home/fabian/youbot_ws/install:/home/fabian/yahboom_rosmaster/install:/home/fabian/yb_support/pointcloud_to_laserscan/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'fabian', 'NAME': 'DESKTOP-579AJL8', 'WSL_INTEROP': '/run/WSL/516_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2404.1.68.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common64/:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common32/:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/Beckhoff/TcPkg/:/mnt/c/Program Files (x86)/AOMEI/AOMEI Backupper/7.4.1:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/MinGW/bin:/mnt/c/MinGW/mingw32/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/OpenSSL-Win64/bin/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/opencv/x64/vc15/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ros/jazzy/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/e/xmllint/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Windows Kits/10:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/youbot_ws/install/youbot:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/rolling/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_ros', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fabian/yb_support/twist_stamper/install/twist_stamper/lib/python3.12/site-packages:/home/fabian/youbot_ws/build/youbot:/home/fabian/youbot_ws/install/youbot/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_lidar/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor', 'WSLENV': ''}), 'shell': False}
+[0.067113] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'cmake'}
+[0.070839] (unitree_lidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_ros2'], 'cwd': '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_ros2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fabian', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/lib:/home/fabian/ros2_ws/install/ros2_control_demo_example_2/lib:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller/lib:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/fabian', 'OLDPWD': '/home/fabian/yb_support', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install:/home/fabian/yb_lidar/unitree_lidar_ros2/install:/home/fabian/yb_ros_odrive/odrive_ros2_control/install:/home/fabian/yb_support/mecanum_drive_controller/install:/home/fabian/yb_support/twist_stamper/install:/home/fabian/ros2_ws/install:/home/fabian/youbot_ws/install:/home/fabian/yahboom_rosmaster/install:/home/fabian/yb_support/pointcloud_to_laserscan/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'fabian', 'NAME': 'DESKTOP-579AJL8', 'WSL_INTEROP': '/run/WSL/516_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2404.1.68.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common64/:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common32/:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/Beckhoff/TcPkg/:/mnt/c/Program Files (x86)/AOMEI/AOMEI Backupper/7.4.1:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/MinGW/bin:/mnt/c/MinGW/mingw32/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/OpenSSL-Win64/bin/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/opencv/x64/vc15/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ros/jazzy/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/e/xmllint/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Windows Kits/10:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/youbot_ws/install/youbot:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/rolling/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_ros2', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fabian/yb_support/twist_stamper/install/twist_stamper/lib/python3.12/site-packages:/home/fabian/youbot_ws/build/youbot:/home/fabian/youbot_ws/install/youbot/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_lidar/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling', 'WSLENV': ''}), 'shell': False}
+[0.076963] (unitree_lidar_sdk) JobProgress: {'identifier': 'unitree_lidar_sdk', 'progress': 'cmake'}
+[0.080519] (unitree_lidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_sdk', '-DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_sdk'], 'cwd': '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fabian', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/lib:/home/fabian/ros2_ws/install/ros2_control_demo_example_2/lib:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller/lib:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/fabian', 'OLDPWD': '/home/fabian/yb_support', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install:/home/fabian/yb_lidar/unitree_lidar_ros2/install:/home/fabian/yb_ros_odrive/odrive_ros2_control/install:/home/fabian/yb_support/mecanum_drive_controller/install:/home/fabian/yb_support/twist_stamper/install:/home/fabian/ros2_ws/install:/home/fabian/youbot_ws/install:/home/fabian/yahboom_rosmaster/install:/home/fabian/yb_support/pointcloud_to_laserscan/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'fabian', 'NAME': 'DESKTOP-579AJL8', 'WSL_INTEROP': '/run/WSL/516_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2404.1.68.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common64/:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common32/:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/Beckhoff/TcPkg/:/mnt/c/Program Files (x86)/AOMEI/AOMEI Backupper/7.4.1:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/MinGW/bin:/mnt/c/MinGW/mingw32/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/OpenSSL-Win64/bin/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/opencv/x64/vc15/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ros/jazzy/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/e/xmllint/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Windows Kits/10:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/youbot_ws/install/youbot:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/rolling/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fabian/yb_support/twist_stamper/install/twist_stamper/lib/python3.12/site-packages:/home/fabian/youbot_ws/build/youbot:/home/fabian/youbot_ws/install/youbot/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_lidar/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor', 'WSLENV': ''}), 'shell': False}
+[0.099513] (-) TimerEvent: {}
+[0.172785] (unitree_lidar_ros) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.173366] (unitree_lidar_ros) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[0.173606] (unitree_lidar_ros) StderrLine: {'line': b'  CMake.\n'}
+[0.173784] (unitree_lidar_ros) StderrLine: {'line': b'\n'}
+[0.173951] (unitree_lidar_ros) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.174156] (unitree_lidar_ros) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.174365] (unitree_lidar_ros) StderrLine: {'line': b'\n'}
+[0.174598] (unitree_lidar_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[0.174766] (unitree_lidar_sdk) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.175012] (unitree_lidar_sdk) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[0.175213] (unitree_lidar_sdk) StderrLine: {'line': b'  CMake.\n'}
+[0.175404] (unitree_lidar_sdk) StderrLine: {'line': b'\n'}
+[0.175558] (unitree_lidar_sdk) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.175738] (unitree_lidar_sdk) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.175900] (unitree_lidar_sdk) StderrLine: {'line': b'\n'}
+[0.176072] (unitree_lidar_sdk) StderrLine: {'line': b'\x1b[0m\n'}
+[0.199654] (-) TimerEvent: {}
+[0.300008] (-) TimerEvent: {}
+[0.400509] (-) TimerEvent: {}
+[0.501176] (-) TimerEvent: {}
+[0.601605] (-) TimerEvent: {}
+[0.702279] (-) TimerEvent: {}
+[0.778678] (unitree_lidar_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.784192] (unitree_lidar_sdk) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.787265] (unitree_lidar_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.802454] (-) TimerEvent: {}
+[0.902981] (-) TimerEvent: {}
+[1.003434] (-) TimerEvent: {}
+[1.103967] (-) TimerEvent: {}
+[1.204511] (-) TimerEvent: {}
+[1.304967] (-) TimerEvent: {}
+[1.405313] (-) TimerEvent: {}
+[1.505725] (-) TimerEvent: {}
+[1.606445] (-) TimerEvent: {}
+[1.706878] (-) TimerEvent: {}
+[1.807226] (-) TimerEvent: {}
+[1.907809] (-) TimerEvent: {}
+[2.008276] (-) TimerEvent: {}
+[2.108801] (-) TimerEvent: {}
+[2.114967] (unitree_lidar_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.125594] (unitree_lidar_sdk) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.197920] (unitree_lidar_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.208946] (-) TimerEvent: {}
+[2.309312] (-) TimerEvent: {}
+[2.409775] (-) TimerEvent: {}
+[2.510199] (-) TimerEvent: {}
+[2.611287] (-) TimerEvent: {}
+[2.711858] (-) TimerEvent: {}
+[2.812320] (-) TimerEvent: {}
+[2.912762] (-) TimerEvent: {}
+[3.013340] (-) TimerEvent: {}
+[3.113813] (-) TimerEvent: {}
+[3.122254] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.214045] (-) TimerEvent: {}
+[3.260450] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.314242] (-) TimerEvent: {}
+[3.320077] (unitree_lidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.414450] (-) TimerEvent: {}
+[3.514944] (-) TimerEvent: {}
+[3.615519] (-) TimerEvent: {}
+[3.716051] (-) TimerEvent: {}
+[3.771785] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.785872] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.789560] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.796770] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.815049] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.816207] (-) TimerEvent: {}
+[3.843206] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.844158] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.845567] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.907319] (unitree_lidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.916372] (-) TimerEvent: {}
+[3.929567] (unitree_lidar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.930114] (unitree_lidar_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.931000] (unitree_lidar_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.012850] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.016545] (-) TimerEvent: {}
+[4.052825] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.116706] (-) TimerEvent: {}
+[4.119230] (unitree_lidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.216834] (-) TimerEvent: {}
+[4.317267] (-) TimerEvent: {}
+[4.417709] (-) TimerEvent: {}
+[4.518199] (-) TimerEvent: {}
+[4.601995] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.618365] (-) TimerEvent: {}
+[4.630503] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.631519] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.633441] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.641691] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.669799] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.670467] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.671616] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.674368] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Configuring done (4.5s)\n'}
+[4.696768] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.713778] (unitree_lidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.718527] (-) TimerEvent: {}
+[4.720119] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Build files have been written to: /home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk\n'}
+[4.726298] (unitree_lidar_sdk) CommandEnded: {'returncode': 0}
+[4.727152] (unitree_lidar_sdk) JobProgress: {'identifier': 'unitree_lidar_sdk', 'progress': 'build'}
+[4.728195] (unitree_lidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk', '--', '-j7', '-l7'], 'cwd': '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fabian', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/lib:/home/fabian/ros2_ws/install/ros2_control_demo_example_2/lib:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller/lib:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/fabian', 'OLDPWD': '/home/fabian/yb_support', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install:/home/fabian/yb_lidar/unitree_lidar_ros2/install:/home/fabian/yb_ros_odrive/odrive_ros2_control/install:/home/fabian/yb_support/mecanum_drive_controller/install:/home/fabian/yb_support/twist_stamper/install:/home/fabian/ros2_ws/install:/home/fabian/youbot_ws/install:/home/fabian/yahboom_rosmaster/install:/home/fabian/yb_support/pointcloud_to_laserscan/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'fabian', 'NAME': 'DESKTOP-579AJL8', 'WSL_INTEROP': '/run/WSL/516_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2404.1.68.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common64/:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common32/:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/Beckhoff/TcPkg/:/mnt/c/Program Files (x86)/AOMEI/AOMEI Backupper/7.4.1:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/MinGW/bin:/mnt/c/MinGW/mingw32/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/OpenSSL-Win64/bin/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/opencv/x64/vc15/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ros/jazzy/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/e/xmllint/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Windows Kits/10:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/youbot_ws/install/youbot:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/rolling/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fabian/yb_support/twist_stamper/install/twist_stamper/lib/python3.12/site-packages:/home/fabian/youbot_ws/build/youbot:/home/fabian/youbot_ws/install/youbot/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_lidar/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor', 'WSLENV': ''}), 'shell': False}
+[4.729974] (unitree_lidar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.730641] (unitree_lidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.732015] (unitree_lidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.818700] (-) TimerEvent: {}
+[4.838889] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/set_to_serial_mode.dir/examples/set_to_serial_mode.cpp.o\x1b[0m\n'}
+[4.842733] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/example_lidar_udp.dir/examples/example_lidar_udp.cpp.o\x1b[0m\n'}
+[4.848407] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/set_to_udp_mode.dir/examples/set_to_udp_mode.cpp.o\x1b[0m\n'}
+[4.853820] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/set_ip_address.dir/examples/set_ip_address.cpp.o\x1b[0m\n'}
+[4.856480] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/example_lidar_serial.dir/examples/example_lidar_serial.cpp.o\x1b[0m\n'}
+[4.885416] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 2.7.2 (/opt/ros/rolling/share/ament_cmake/cmake)\n'}
+[4.918858] (-) TimerEvent: {}
+[5.019258] (-) TimerEvent: {}
+[5.121072] (-) TimerEvent: {}
+[5.151033] (unitree_lidar_ros) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):\n'}
+[5.151858] (unitree_lidar_ros) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[5.152074] (unitree_lidar_ros) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[5.152271] (unitree_lidar_ros) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[5.152466] (unitree_lidar_ros) StderrLine: {'line': b'\n'}
+[5.152703] (unitree_lidar_ros) StderrLine: {'line': b'  CMake variable FLANN_ROOT is set to:\n'}
+[5.152916] (unitree_lidar_ros) StderrLine: {'line': b'\n'}
+[5.153137] (unitree_lidar_ros) StderrLine: {'line': b'    /usr\n'}
+[5.153318] (unitree_lidar_ros) StderrLine: {'line': b'\n'}
+[5.153479] (unitree_lidar_ros) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[5.153671] (unitree_lidar_ros) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[5.153815] (unitree_lidar_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.153910] (unitree_lidar_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)\n'}
+[5.153993] (unitree_lidar_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)\n'}
+[5.154074] (unitree_lidar_ros) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)\n'}
+[5.154166] (unitree_lidar_ros) StderrLine: {'line': b'  CMakeLists.txt:9 (find_package)\n'}
+[5.154319] (unitree_lidar_ros) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[5.154513] (unitree_lidar_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[5.166175] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found flann version 1.9.2\n'}
+[5.221216] (-) TimerEvent: {}
+[5.321600] (-) TimerEvent: {}
+[5.388663] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[5.421754] (-) TimerEvent: {}
+[5.522211] (-) TimerEvent: {}
+[5.623939] (-) TimerEvent: {}
+[5.724443] (-) TimerEvent: {}
+[5.734566] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.824593] (-) TimerEvent: {}
+[5.928583] (-) TimerEvent: {}
+[6.034711] (-) TimerEvent: {}
+[6.137034] (-) TimerEvent: {}
+[6.237799] (-) TimerEvent: {}
+[6.311941] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rclcpp: 29.4.0 (/opt/ros/rolling/share/rclcpp/cmake)\n'}
+[6.337974] (-) TimerEvent: {}
+[6.438425] (-) TimerEvent: {}
+[6.539220] (-) TimerEvent: {}
+[6.648775] (-) TimerEvent: {}
+[6.753158] (-) TimerEvent: {}
+[6.857002] (-) TimerEvent: {}
+[6.957389] (-) TimerEvent: {}
+[7.058708] (-) TimerEvent: {}
+[7.168974] (-) TimerEvent: {}
+[7.224599] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[7.224805] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5") found components: CXX \n'}
+[7.276667] (-) TimerEvent: {}
+[7.377075] (-) TimerEvent: {}
+[7.479127] (-) TimerEvent: {}
+[7.524803] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_c/cmake)\n'}
+[7.579327] (-) TimerEvent: {}
+[7.655788] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)\n'}
+[7.680942] (-) TimerEvent: {}
+[7.781285] (-) TimerEvent: {}
+[7.827426] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_sdk/bin/example_lidar_serial\x1b[0m\n'}
+[7.841177] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_sdk/bin/set_to_serial_mode\x1b[0m\n'}
+[7.849088] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_sdk/bin/example_lidar_udp\x1b[0m\n'}
+[7.861778] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_sdk/bin/set_ip_address\x1b[0m\n'}
+[7.880581] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_sdk/bin/set_to_udp_mode\x1b[0m\n'}
+[7.881386] (-) TimerEvent: {}
+[7.942774] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.981689] (-) TimerEvent: {}
+[8.041640] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.081760] (-) TimerEvent: {}
+[8.182201] (-) TimerEvent: {}
+[8.284895] (-) TimerEvent: {}
+[8.386858] (-) TimerEvent: {}
+[8.434886] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target example_lidar_udp\n'}
+[8.437527] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target example_lidar_serial\n'}
+[8.450250] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target set_to_serial_mode\n'}
+[8.486928] (-) TimerEvent: {}
+[8.496955] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target set_to_udp_mode\n'}
+[8.517635] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target set_ip_address\n'}
+[8.554293] (unitree_lidar_sdk) CommandEnded: {'returncode': 0}
+[8.587104] (-) TimerEvent: {}
+[8.595434] (unitree_lidar_sdk) JobEnded: {'identifier': 'unitree_lidar_sdk', 'rc': 0}
+[8.663411] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.8.1 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)\n'}
+[8.684033] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.3.1 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)\n'}
+[8.687243] (-) TimerEvent: {}
+[8.787840] (-) TimerEvent: {}
+[8.888268] (-) TimerEvent: {}
+[8.988648] (-) TimerEvent: {}
+[9.032242] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[9.060391] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.088808] (-) TimerEvent: {}
+[9.189323] (-) TimerEvent: {}
+[9.289708] (-) TimerEvent: {}
+[9.390129] (-) TimerEvent: {}
+[9.490527] (-) TimerEvent: {}
+[9.567801] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found std_msgs: 5.5.0 (/opt/ros/rolling/share/std_msgs/cmake)\n'}
+[9.590674] (-) TimerEvent: {}
+[9.619209] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found geometry_msgs: 5.5.0 (/opt/ros/rolling/share/geometry_msgs/cmake)\n'}
+[9.681551] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found pcl_conversions: 2.6.3 (/opt/ros/rolling/share/pcl_conversions/cmake)\n'}
+[9.690798] (-) TimerEvent: {}
+[9.791264] (-) TimerEvent: {}
+[9.891744] (-) TimerEvent: {}
+[9.992077] (-) TimerEvent: {}
+[10.003675] (unitree_lidar_ros2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):\n'}
+[10.004033] (unitree_lidar_ros2) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[10.004288] (unitree_lidar_ros2) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[10.004497] (unitree_lidar_ros2) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[10.004701] (unitree_lidar_ros2) StderrLine: {'line': b'\n'}
+[10.004980] (unitree_lidar_ros2) StderrLine: {'line': b'  CMake variable FLANN_ROOT is set to:\n'}
+[10.005166] (unitree_lidar_ros2) StderrLine: {'line': b'\n'}
+[10.005300] (unitree_lidar_ros2) StderrLine: {'line': b'    /usr\n'}
+[10.005425] (unitree_lidar_ros2) StderrLine: {'line': b'\n'}
+[10.005546] (unitree_lidar_ros2) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[10.005666] (unitree_lidar_ros2) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[10.005827] (unitree_lidar_ros2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[10.006008] (unitree_lidar_ros2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)\n'}
+[10.006190] (unitree_lidar_ros2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)\n'}
+[10.006313] (unitree_lidar_ros2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)\n'}
+[10.006472] (unitree_lidar_ros2) StderrLine: {'line': b'  /opt/ros/rolling/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[10.006633] (unitree_lidar_ros2) StderrLine: {'line': b'  /opt/ros/rolling/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)\n'}
+[10.006947] (unitree_lidar_ros2) StderrLine: {'line': b'  CMakeLists.txt:22 (find_package)\n'}
+[10.007151] (unitree_lidar_ros2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[10.007300] (unitree_lidar_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[10.007435] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found flann version 1.9.2\n'}
+[10.092224] (-) TimerEvent: {}
+[10.192761] (-) TimerEvent: {}
+[10.293149] (-) TimerEvent: {}
+[10.393472] (-) TimerEvent: {}
+[10.493890] (-) TimerEvent: {}
+[10.594298] (-) TimerEvent: {}
+[10.694769] (-) TimerEvent: {}
+[10.795177] (-) TimerEvent: {}
+[10.895614] (-) TimerEvent: {}
+[10.995936] (-) TimerEvent: {}
+[11.096291] (-) TimerEvent: {}
+[11.185946] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[11.186558] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5") found components: CXX \n'}
+[11.196420] (-) TimerEvent: {}
+[11.296806] (-) TimerEvent: {}
+[11.397152] (-) TimerEvent: {}
+[11.497529] (-) TimerEvent: {}
+[11.597943] (-) TimerEvent: {}
+[11.698356] (-) TimerEvent: {}
+[11.798824] (-) TimerEvent: {}
+[11.899332] (-) TimerEvent: {}
+[11.999703] (-) TimerEvent: {}
+[12.100201] (-) TimerEvent: {}
+[12.200645] (-) TimerEvent: {}
+[12.301204] (-) TimerEvent: {}
+[12.401770] (-) TimerEvent: {}
+[12.502244] (-) TimerEvent: {}
+[12.602704] (-) TimerEvent: {}
+[12.703073] (-) TimerEvent: {}
+[12.803523] (-) TimerEvent: {}
+[12.903960] (-) TimerEvent: {}
+[13.004345] (-) TimerEvent: {}
+[13.104706] (-) TimerEvent: {}
+[13.205213] (-) TimerEvent: {}
+[13.305641] (-) TimerEvent: {}
+[13.406052] (-) TimerEvent: {}
+[13.506519] (-) TimerEvent: {}
+[13.606961] (-) TimerEvent: {}
+[13.707403] (-) TimerEvent: {}
+[13.807801] (-) TimerEvent: {}
+[13.908306] (-) TimerEvent: {}
+[14.008699] (-) TimerEvent: {}
+[14.109240] (-) TimerEvent: {}
+[14.209707] (-) TimerEvent: {}
+[14.310128] (-) TimerEvent: {}
+[14.410551] (-) TimerEvent: {}
+[14.510992] (-) TimerEvent: {}
+[14.611433] (-) TimerEvent: {}
+[14.711923] (-) TimerEvent: {}
+[14.812401] (-) TimerEvent: {}
+[14.912824] (-) TimerEvent: {}
+[15.013416] (-) TimerEvent: {}
+[15.113935] (-) TimerEvent: {}
+[15.214434] (-) TimerEvent: {}
+[15.314881] (-) TimerEvent: {}
+[15.415328] (-) TimerEvent: {}
+[15.515711] (-) TimerEvent: {}
+[15.616149] (-) TimerEvent: {}
+[15.716462] (-) TimerEvent: {}
+[15.816905] (-) TimerEvent: {}
+[15.917296] (-) TimerEvent: {}
+[16.017622] (-) TimerEvent: {}
+[16.117998] (-) TimerEvent: {}
+[16.218359] (-) TimerEvent: {}
+[16.318750] (-) TimerEvent: {}
+[16.419166] (-) TimerEvent: {}
+[16.519569] (-) TimerEvent: {}
+[16.619896] (-) TimerEvent: {}
+[16.720314] (-) TimerEvent: {}
+[16.820618] (-) TimerEvent: {}
+[16.921016] (-) TimerEvent: {}
+[17.021343] (-) TimerEvent: {}
+[17.121816] (-) TimerEvent: {}
+[17.222434] (-) TimerEvent: {}
+[17.322785] (-) TimerEvent: {}
+[17.423210] (-) TimerEvent: {}
+[17.523516] (-) TimerEvent: {}
+[17.623856] (-) TimerEvent: {}
+[17.724227] (-) TimerEvent: {}
+[17.824608] (-) TimerEvent: {}
+[17.924945] (-) TimerEvent: {}
+[18.025347] (-) TimerEvent: {}
+[18.125729] (-) TimerEvent: {}
+[18.226052] (-) TimerEvent: {}
+[18.326496] (-) TimerEvent: {}
+[18.426854] (-) TimerEvent: {}
+[18.527330] (-) TimerEvent: {}
+[18.627660] (-) TimerEvent: {}
+[18.728133] (-) TimerEvent: {}
+[18.828643] (-) TimerEvent: {}
+[18.929111] (-) TimerEvent: {}
+[19.029634] (-) TimerEvent: {}
+[19.130101] (-) TimerEvent: {}
+[19.230457] (-) TimerEvent: {}
+[19.330820] (-) TimerEvent: {}
+[19.431170] (-) TimerEvent: {}
+[19.531554] (-) TimerEvent: {}
+[19.631862] (-) TimerEvent: {}
+[19.732184] (-) TimerEvent: {}
+[19.832520] (-) TimerEvent: {}
+[19.933021] (-) TimerEvent: {}
+[20.033514] (-) TimerEvent: {}
+[20.133996] (-) TimerEvent: {}
+[20.234415] (-) TimerEvent: {}
+[20.334806] (-) TimerEvent: {}
+[20.435153] (-) TimerEvent: {}
+[20.535605] (-) TimerEvent: {}
+[20.635935] (-) TimerEvent: {}
+[20.736233] (-) TimerEvent: {}
+[20.836544] (-) TimerEvent: {}
+[20.936958] (-) TimerEvent: {}
+[21.037345] (-) TimerEvent: {}
+[21.137662] (-) TimerEvent: {}
+[21.238030] (-) TimerEvent: {}
+[21.338376] (-) TimerEvent: {}
+[21.438829] (-) TimerEvent: {}
+[21.539189] (-) TimerEvent: {}
+[21.639627] (-) TimerEvent: {}
+[21.740016] (-) TimerEvent: {}
+[21.840391] (-) TimerEvent: {}
+[21.940728] (-) TimerEvent: {}
+[22.041038] (-) TimerEvent: {}
+[22.141467] (-) TimerEvent: {}
+[22.241832] (-) TimerEvent: {}
+[22.342154] (-) TimerEvent: {}
+[22.442474] (-) TimerEvent: {}
+[22.542843] (-) TimerEvent: {}
+[22.643168] (-) TimerEvent: {}
+[22.743499] (-) TimerEvent: {}
+[22.843833] (-) TimerEvent: {}
+[22.944169] (-) TimerEvent: {}
+[23.044619] (-) TimerEvent: {}
+[23.144973] (-) TimerEvent: {}
+[23.245300] (-) TimerEvent: {}
+[23.345647] (-) TimerEvent: {}
+[23.446058] (-) TimerEvent: {}
+[23.546366] (-) TimerEvent: {}
+[23.646675] (-) TimerEvent: {}
+[23.747072] (-) TimerEvent: {}
+[23.847368] (-) TimerEvent: {}
+[23.947745] (-) TimerEvent: {}
+[24.048068] (-) TimerEvent: {}
+[24.148446] (-) TimerEvent: {}
+[24.248807] (-) TimerEvent: {}
+[24.349397] (-) TimerEvent: {}
+[24.449725] (-) TimerEvent: {}
+[24.550044] (-) TimerEvent: {}
+[24.650338] (-) TimerEvent: {}
+[24.750721] (-) TimerEvent: {}
+[24.851161] (-) TimerEvent: {}
+[24.951533] (-) TimerEvent: {}
+[25.051884] (-) TimerEvent: {}
+[25.152361] (-) TimerEvent: {}
+[25.252717] (-) TimerEvent: {}
+[25.353102] (-) TimerEvent: {}
+[25.453459] (-) TimerEvent: {}
+[25.553764] (-) TimerEvent: {}
+[25.654078] (-) TimerEvent: {}
+[25.754400] (-) TimerEvent: {}
+[25.854760] (-) TimerEvent: {}
+[25.955087] (-) TimerEvent: {}
+[26.055525] (-) TimerEvent: {}
+[26.155921] (-) TimerEvent: {}
+[26.256277] (-) TimerEvent: {}
+[26.356693] (-) TimerEvent: {}
+[26.457135] (-) TimerEvent: {}
+[26.557449] (-) TimerEvent: {}
+[26.604828] (unitree_lidar_ros) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[26.627452] (unitree_lidar_ros) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.27\n'}
+[26.657620] (-) TimerEvent: {}
+[26.757953] (-) TimerEvent: {}
+[26.824970] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[26.827120] (unitree_lidar_ros) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[26.858078] (-) TimerEvent: {}
+[26.958488] (-) TimerEvent: {}
+[27.059044] (-) TimerEvent: {}
+[27.159676] (-) TimerEvent: {}
+[27.175817] (unitree_lidar_ros) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[27.260044] (-) TimerEvent: {}
+[27.360702] (-) TimerEvent: {}
+[27.364048] (unitree_lidar_ros) StdoutLine: {'line': b'-- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) \n'}
+[27.461094] (-) TimerEvent: {}
+[27.561689] (-) TimerEvent: {}
+[27.662272] (-) TimerEvent: {}
+[27.762643] (-) TimerEvent: {}
+[27.863272] (-) TimerEvent: {}
+[27.963913] (-) TimerEvent: {}
+[28.064412] (-) TimerEvent: {}
+[28.164774] (-) TimerEvent: {}
+[28.265160] (-) TimerEvent: {}
+[28.365487] (-) TimerEvent: {}
+[28.465788] (-) TimerEvent: {}
+[28.566143] (-) TimerEvent: {}
+[28.598574] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  \n'}
+[28.666274] (-) TimerEvent: {}
+[28.764614] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[28.766438] (-) TimerEvent: {}
+[28.796120] (unitree_lidar_ros2) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.27\n'}
+[28.866614] (-) TimerEvent: {}
+[28.966972] (-) TimerEvent: {}
+[28.994415] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[28.995666] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[29.067117] (-) TimerEvent: {}
+[29.167698] (-) TimerEvent: {}
+[29.268342] (-) TimerEvent: {}
+[29.357033] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[29.368482] (-) TimerEvent: {}
+[29.468977] (-) TimerEvent: {}
+[29.556106] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) \n'}
+[29.569119] (-) TimerEvent: {}
+[29.604186] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.43") \n'}
+[29.669434] (-) TimerEvent: {}
+[29.770053] (-) TimerEvent: {}
+[29.870472] (-) TimerEvent: {}
+[29.971039] (-) TimerEvent: {}
+[30.071398] (-) TimerEvent: {}
+[30.172027] (-) TimerEvent: {}
+[30.272652] (-) TimerEvent: {}
+[30.373256] (-) TimerEvent: {}
+[30.473885] (-) TimerEvent: {}
+[30.574298] (-) TimerEvent: {}
+[30.674679] (-) TimerEvent: {}
+[30.752584] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  \n'}
+[30.774808] (-) TimerEvent: {}
+[30.875423] (-) TimerEvent: {}
+[30.976068] (-) TimerEvent: {}
+[31.076712] (-) TimerEvent: {}
+[31.177379] (-) TimerEvent: {}
+[31.278006] (-) TimerEvent: {}
+[31.378625] (-) TimerEvent: {}
+[31.479297] (-) TimerEvent: {}
+[31.579991] (-) TimerEvent: {}
+[31.680637] (-) TimerEvent: {}
+[31.781303] (-) TimerEvent: {}
+[31.795191] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.43") \n'}
+[31.881726] (-) TimerEvent: {}
+[31.982201] (-) TimerEvent: {}
+[32.082592] (-) TimerEvent: {}
+[32.182968] (-) TimerEvent: {}
+[32.283338] (-) TimerEvent: {}
+[32.383665] (-) TimerEvent: {}
+[32.484315] (-) TimerEvent: {}
+[32.584843] (-) TimerEvent: {}
+[32.685252] (-) TimerEvent: {}
+[32.785686] (-) TimerEvent: {}
+[32.886148] (-) TimerEvent: {}
+[32.986572] (-) TimerEvent: {}
+[33.087088] (-) TimerEvent: {}
+[33.187710] (-) TimerEvent: {}
+[33.288023] (-) TimerEvent: {}
+[33.388378] (-) TimerEvent: {}
+[33.488956] (-) TimerEvent: {}
+[33.589570] (-) TimerEvent: {}
+[33.689936] (-) TimerEvent: {}
+[33.790314] (-) TimerEvent: {}
+[33.890628] (-) TimerEvent: {}
+[33.991173] (-) TimerEvent: {}
+[34.091604] (-) TimerEvent: {}
+[34.191987] (-) TimerEvent: {}
+[34.292322] (-) TimerEvent: {}
+[34.392686] (-) TimerEvent: {}
+[34.493090] (-) TimerEvent: {}
+[34.593491] (-) TimerEvent: {}
+[34.693874] (-) TimerEvent: {}
+[34.794201] (-) TimerEvent: {}
+[34.894532] (-) TimerEvent: {}
+[34.994897] (-) TimerEvent: {}
+[35.095218] (-) TimerEvent: {}
+[35.195613] (-) TimerEvent: {}
+[35.295948] (-) TimerEvent: {}
+[35.396349] (-) TimerEvent: {}
+[35.496758] (-) TimerEvent: {}
+[35.597198] (-) TimerEvent: {}
+[35.697603] (-) TimerEvent: {}
+[35.797970] (-) TimerEvent: {}
+[35.898302] (-) TimerEvent: {}
+[35.998653] (-) TimerEvent: {}
+[36.098983] (-) TimerEvent: {}
+[36.199312] (-) TimerEvent: {}
+[36.299676] (-) TimerEvent: {}
+[36.400080] (-) TimerEvent: {}
+[36.500439] (-) TimerEvent: {}
+[36.600775] (-) TimerEvent: {}
+[36.701158] (-) TimerEvent: {}
+[36.801693] (-) TimerEvent: {}
+[36.902307] (-) TimerEvent: {}
+[37.002678] (-) TimerEvent: {}
+[37.103009] (-) TimerEvent: {}
+[37.203354] (-) TimerEvent: {}
+[37.303677] (-) TimerEvent: {}
+[37.404042] (-) TimerEvent: {}
+[37.504435] (-) TimerEvent: {}
+[37.605035] (-) TimerEvent: {}
+[37.705619] (-) TimerEvent: {}
+[37.806189] (-) TimerEvent: {}
+[37.906625] (-) TimerEvent: {}
+[38.007016] (-) TimerEvent: {}
+[38.107596] (-) TimerEvent: {}
+[38.208180] (-) TimerEvent: {}
+[38.308757] (-) TimerEvent: {}
+[38.409366] (-) TimerEvent: {}
+[38.509973] (-) TimerEvent: {}
+[38.610585] (-) TimerEvent: {}
+[38.711381] (-) TimerEvent: {}
+[38.811771] (-) TimerEvent: {}
+[38.912143] (-) TimerEvent: {}
+[39.012475] (-) TimerEvent: {}
+[39.112790] (-) TimerEvent: {}
+[39.213190] (-) TimerEvent: {}
+[39.313594] (-) TimerEvent: {}
+[39.413911] (-) TimerEvent: {}
+[39.514267] (-) TimerEvent: {}
+[39.614625] (-) TimerEvent: {}
+[39.715021] (-) TimerEvent: {}
+[39.815431] (-) TimerEvent: {}
+[39.915737] (-) TimerEvent: {}
+[40.016064] (-) TimerEvent: {}
+[40.116390] (-) TimerEvent: {}
+[40.216688] (-) TimerEvent: {}
+[40.317088] (-) TimerEvent: {}
+[40.417389] (-) TimerEvent: {}
+[40.517727] (-) TimerEvent: {}
+[40.618105] (-) TimerEvent: {}
+[40.718504] (-) TimerEvent: {}
+[40.818828] (-) TimerEvent: {}
+[40.919236] (-) TimerEvent: {}
+[41.019635] (-) TimerEvent: {}
+[41.120048] (-) TimerEvent: {}
+[41.220424] (-) TimerEvent: {}
+[41.320781] (-) TimerEvent: {}
+[41.421087] (-) TimerEvent: {}
+[41.521495] (-) TimerEvent: {}
+[41.621901] (-) TimerEvent: {}
+[41.722302] (-) TimerEvent: {}
+[41.822708] (-) TimerEvent: {}
+[41.923116] (-) TimerEvent: {}
+[42.023471] (-) TimerEvent: {}
+[42.123796] (-) TimerEvent: {}
+[42.224184] (-) TimerEvent: {}
+[42.324570] (-) TimerEvent: {}
+[42.424935] (-) TimerEvent: {}
+[42.525334] (-) TimerEvent: {}
+[42.625706] (-) TimerEvent: {}
+[42.726068] (-) TimerEvent: {}
+[42.826497] (-) TimerEvent: {}
+[42.926861] (-) TimerEvent: {}
+[43.027200] (-) TimerEvent: {}
+[43.127566] (-) TimerEvent: {}
+[43.227957] (-) TimerEvent: {}
+[43.328285] (-) TimerEvent: {}
+[43.428643] (-) TimerEvent: {}
+[43.436534] (unitree_lidar_ros) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[43.445310] (unitree_lidar_ros) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[43.528774] (-) TimerEvent: {}
+[43.629213] (-) TimerEvent: {}
+[43.729718] (-) TimerEvent: {}
+[43.830154] (-) TimerEvent: {}
+[43.930502] (-) TimerEvent: {}
+[44.030927] (-) TimerEvent: {}
+[44.131784] (-) TimerEvent: {}
+[44.232137] (-) TimerEvent: {}
+[44.332440] (-) TimerEvent: {}
+[44.432839] (-) TimerEvent: {}
+[44.533178] (-) TimerEvent: {}
+[44.633548] (-) TimerEvent: {}
+[44.733923] (-) TimerEvent: {}
+[44.834347] (-) TimerEvent: {}
+[44.934743] (-) TimerEvent: {}
+[45.035138] (-) TimerEvent: {}
+[45.135494] (-) TimerEvent: {}
+[45.235813] (-) TimerEvent: {}
+[45.336132] (-) TimerEvent: {}
+[45.436502] (-) TimerEvent: {}
+[45.536888] (-) TimerEvent: {}
+[45.637266] (-) TimerEvent: {}
+[45.655741] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[45.667340] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[45.737400] (-) TimerEvent: {}
+[45.837798] (-) TimerEvent: {}
+[45.938199] (-) TimerEvent: {}
+[46.038485] (-) TimerEvent: {}
+[46.138866] (-) TimerEvent: {}
+[46.239172] (-) TimerEvent: {}
+[46.339491] (-) TimerEvent: {}
+[46.439830] (-) TimerEvent: {}
+[46.540195] (-) TimerEvent: {}
+[46.640587] (-) TimerEvent: {}
+[46.740977] (-) TimerEvent: {}
+[46.841377] (-) TimerEvent: {}
+[46.941722] (-) TimerEvent: {}
+[47.042066] (-) TimerEvent: {}
+[47.142421] (-) TimerEvent: {}
+[47.242793] (-) TimerEvent: {}
+[47.343162] (-) TimerEvent: {}
+[47.443545] (-) TimerEvent: {}
+[47.543915] (-) TimerEvent: {}
+[47.644234] (-) TimerEvent: {}
+[47.744615] (-) TimerEvent: {}
+[47.845041] (-) TimerEvent: {}
+[47.945382] (-) TimerEvent: {}
+[48.045769] (-) TimerEvent: {}
+[48.146188] (-) TimerEvent: {}
+[48.246556] (-) TimerEvent: {}
+[48.346941] (-) TimerEvent: {}
+[48.447245] (-) TimerEvent: {}
+[48.547545] (-) TimerEvent: {}
+[48.647945] (-) TimerEvent: {}
+[48.748259] (-) TimerEvent: {}
+[48.848583] (-) TimerEvent: {}
+[48.949063] (-) TimerEvent: {}
+[49.049362] (-) TimerEvent: {}
+[49.149673] (-) TimerEvent: {}
+[49.250012] (-) TimerEvent: {}
+[49.350344] (-) TimerEvent: {}
+[49.450616] (-) TimerEvent: {}
+[49.551005] (-) TimerEvent: {}
+[49.651346] (-) TimerEvent: {}
+[49.751700] (-) TimerEvent: {}
+[49.852009] (-) TimerEvent: {}
+[49.952336] (-) TimerEvent: {}
+[50.052681] (-) TimerEvent: {}
+[50.153030] (-) TimerEvent: {}
+[50.253397] (-) TimerEvent: {}
+[50.353759] (-) TimerEvent: {}
+[50.454061] (-) TimerEvent: {}
+[50.554414] (-) TimerEvent: {}
+[50.654831] (-) TimerEvent: {}
+[50.755221] (-) TimerEvent: {}
+[50.855617] (-) TimerEvent: {}
+[50.956001] (-) TimerEvent: {}
+[51.056410] (-) TimerEvent: {}
+[51.156933] (-) TimerEvent: {}
+[51.257348] (-) TimerEvent: {}
+[51.357865] (-) TimerEvent: {}
+[51.458244] (-) TimerEvent: {}
+[51.558649] (-) TimerEvent: {}
+[51.659072] (-) TimerEvent: {}
+[51.759432] (-) TimerEvent: {}
+[51.859809] (-) TimerEvent: {}
+[51.960178] (-) TimerEvent: {}
+[52.060501] (-) TimerEvent: {}
+[52.160965] (-) TimerEvent: {}
+[52.261372] (-) TimerEvent: {}
+[52.361745] (-) TimerEvent: {}
+[52.462057] (-) TimerEvent: {}
+[52.562433] (-) TimerEvent: {}
+[52.662847] (-) TimerEvent: {}
+[52.763205] (-) TimerEvent: {}
+[52.863581] (-) TimerEvent: {}
+[52.963989] (-) TimerEvent: {}
+[53.064388] (-) TimerEvent: {}
+[53.164775] (-) TimerEvent: {}
+[53.265183] (-) TimerEvent: {}
+[53.365556] (-) TimerEvent: {}
+[53.465911] (-) TimerEvent: {}
+[53.566275] (-) TimerEvent: {}
+[53.666590] (-) TimerEvent: {}
+[53.766891] (-) TimerEvent: {}
+[53.867221] (-) TimerEvent: {}
+[53.967568] (-) TimerEvent: {}
+[54.067873] (-) TimerEvent: {}
+[54.168205] (-) TimerEvent: {}
+[54.268586] (-) TimerEvent: {}
+[54.368973] (-) TimerEvent: {}
+[54.469321] (-) TimerEvent: {}
+[54.569659] (-) TimerEvent: {}
+[54.669995] (-) TimerEvent: {}
+[54.770310] (-) TimerEvent: {}
+[54.870707] (-) TimerEvent: {}
+[54.971145] (-) TimerEvent: {}
+[55.071585] (-) TimerEvent: {}
+[55.172051] (-) TimerEvent: {}
+[55.272437] (-) TimerEvent: {}
+[55.372746] (-) TimerEvent: {}
+[55.473162] (-) TimerEvent: {}
+[55.573518] (-) TimerEvent: {}
+[55.673826] (-) TimerEvent: {}
+[55.774122] (-) TimerEvent: {}
+[55.874520] (-) TimerEvent: {}
+[55.974967] (-) TimerEvent: {}
+[56.075343] (-) TimerEvent: {}
+[56.175711] (-) TimerEvent: {}
+[56.276060] (-) TimerEvent: {}
+[56.376458] (-) TimerEvent: {}
+[56.476939] (-) TimerEvent: {}
+[56.577328] (-) TimerEvent: {}
+[56.677676] (-) TimerEvent: {}
+[56.778023] (-) TimerEvent: {}
+[56.878380] (-) TimerEvent: {}
+[56.978722] (-) TimerEvent: {}
+[57.023195] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[57.078958] (-) TimerEvent: {}
+[57.179363] (-) TimerEvent: {}
+[57.279680] (-) TimerEvent: {}
+[57.380079] (-) TimerEvent: {}
+[57.480404] (-) TimerEvent: {}
+[57.580750] (-) TimerEvent: {}
+[57.681329] (-) TimerEvent: {}
+[57.781844] (-) TimerEvent: {}
+[57.882395] (-) TimerEvent: {}
+[57.982824] (-) TimerEvent: {}
+[58.083335] (-) TimerEvent: {}
+[58.183805] (-) TimerEvent: {}
+[58.284462] (-) TimerEvent: {}
+[58.385028] (-) TimerEvent: {}
+[58.485586] (-) TimerEvent: {}
+[58.586112] (-) TimerEvent: {}
+[58.686677] (-) TimerEvent: {}
+[58.787137] (-) TimerEvent: {}
+[58.887604] (-) TimerEvent: {}
+[58.988140] (-) TimerEvent: {}
+[59.088634] (-) TimerEvent: {}
+[59.189097] (-) TimerEvent: {}
+[59.289521] (-) TimerEvent: {}
+[59.361523] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[59.389676] (-) TimerEvent: {}
+[59.490035] (-) TimerEvent: {}
+[59.590389] (-) TimerEvent: {}
+[59.690783] (-) TimerEvent: {}
+[59.791154] (-) TimerEvent: {}
+[59.891523] (-) TimerEvent: {}
+[59.991888] (-) TimerEvent: {}
+[60.092339] (-) TimerEvent: {}
+[60.192699] (-) TimerEvent: {}
+[60.293083] (-) TimerEvent: {}
+[60.393569] (-) TimerEvent: {}
+[60.493921] (-) TimerEvent: {}
+[60.594260] (-) TimerEvent: {}
+[60.694562] (-) TimerEvent: {}
+[60.794873] (-) TimerEvent: {}
+[60.895336] (-) TimerEvent: {}
+[60.995829] (-) TimerEvent: {}
+[61.096176] (-) TimerEvent: {}
+[61.196490] (-) TimerEvent: {}
+[61.296929] (-) TimerEvent: {}
+[61.397319] (-) TimerEvent: {}
+[61.497848] (-) TimerEvent: {}
+[61.598216] (-) TimerEvent: {}
+[61.698622] (-) TimerEvent: {}
+[61.798935] (-) TimerEvent: {}
+[61.899328] (-) TimerEvent: {}
+[61.999703] (-) TimerEvent: {}
+[62.100062] (-) TimerEvent: {}
+[62.200474] (-) TimerEvent: {}
+[62.300922] (-) TimerEvent: {}
+[62.401248] (-) TimerEvent: {}
+[62.501622] (-) TimerEvent: {}
+[62.602026] (-) TimerEvent: {}
+[62.702426] (-) TimerEvent: {}
+[62.802803] (-) TimerEvent: {}
+[62.903190] (-) TimerEvent: {}
+[63.003529] (-) TimerEvent: {}
+[63.103887] (-) TimerEvent: {}
+[63.204222] (-) TimerEvent: {}
+[63.304530] (-) TimerEvent: {}
+[63.404867] (-) TimerEvent: {}
+[63.505185] (-) TimerEvent: {}
+[63.605486] (-) TimerEvent: {}
+[63.705851] (-) TimerEvent: {}
+[63.806220] (-) TimerEvent: {}
+[63.906593] (-) TimerEvent: {}
+[64.006986] (-) TimerEvent: {}
+[64.107440] (-) TimerEvent: {}
+[64.207809] (-) TimerEvent: {}
+[64.308207] (-) TimerEvent: {}
+[64.408636] (-) TimerEvent: {}
+[64.509108] (-) TimerEvent: {}
+[64.609424] (-) TimerEvent: {}
+[64.709770] (-) TimerEvent: {}
+[64.810102] (-) TimerEvent: {}
+[64.910475] (-) TimerEvent: {}
+[65.011040] (-) TimerEvent: {}
+[65.111391] (-) TimerEvent: {}
+[65.211732] (-) TimerEvent: {}
+[65.312053] (-) TimerEvent: {}
+[65.412425] (-) TimerEvent: {}
+[65.512774] (-) TimerEvent: {}
+[65.613187] (-) TimerEvent: {}
+[65.713490] (-) TimerEvent: {}
+[65.813838] (-) TimerEvent: {}
+[65.914261] (-) TimerEvent: {}
+[66.014670] (-) TimerEvent: {}
+[66.115059] (-) TimerEvent: {}
+[66.215460] (-) TimerEvent: {}
+[66.315876] (-) TimerEvent: {}
+[66.416233] (-) TimerEvent: {}
+[66.516583] (-) TimerEvent: {}
+[66.616967] (-) TimerEvent: {}
+[66.717358] (-) TimerEvent: {}
+[66.817706] (-) TimerEvent: {}
+[66.918071] (-) TimerEvent: {}
+[67.018520] (-) TimerEvent: {}
+[67.119022] (-) TimerEvent: {}
+[67.219415] (-) TimerEvent: {}
+[67.319840] (-) TimerEvent: {}
+[67.420373] (-) TimerEvent: {}
+[67.520944] (-) TimerEvent: {}
+[67.621497] (-) TimerEvent: {}
+[67.722081] (-) TimerEvent: {}
+[67.822643] (-) TimerEvent: {}
+[67.923155] (-) TimerEvent: {}
+[68.023479] (-) TimerEvent: {}
+[68.123872] (-) TimerEvent: {}
+[68.224237] (-) TimerEvent: {}
+[68.324588] (-) TimerEvent: {}
+[68.425073] (-) TimerEvent: {}
+[68.525465] (-) TimerEvent: {}
+[68.625800] (-) TimerEvent: {}
+[68.726258] (-) TimerEvent: {}
+[68.826829] (-) TimerEvent: {}
+[68.927193] (-) TimerEvent: {}
+[69.027741] (-) TimerEvent: {}
+[69.128248] (-) TimerEvent: {}
+[69.228775] (-) TimerEvent: {}
+[69.329321] (-) TimerEvent: {}
+[69.429847] (-) TimerEvent: {}
+[69.530412] (-) TimerEvent: {}
+[69.630887] (-) TimerEvent: {}
+[69.731278] (-) TimerEvent: {}
+[69.831575] (-) TimerEvent: {}
+[69.931886] (-) TimerEvent: {}
+[70.032401] (-) TimerEvent: {}
+[70.132797] (-) TimerEvent: {}
+[70.233133] (-) TimerEvent: {}
+[70.333549] (-) TimerEvent: {}
+[70.346059] (unitree_lidar_ros) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[70.433742] (-) TimerEvent: {}
+[70.534073] (-) TimerEvent: {}
+[70.634409] (-) TimerEvent: {}
+[70.734718] (-) TimerEvent: {}
+[70.835042] (-) TimerEvent: {}
+[70.935399] (-) TimerEvent: {}
+[71.035801] (-) TimerEvent: {}
+[71.136210] (-) TimerEvent: {}
+[71.236576] (-) TimerEvent: {}
+[71.336941] (-) TimerEvent: {}
+[71.437293] (-) TimerEvent: {}
+[71.537635] (-) TimerEvent: {}
+[71.637984] (-) TimerEvent: {}
+[71.738342] (-) TimerEvent: {}
+[71.838684] (-) TimerEvent: {}
+[71.939067] (-) TimerEvent: {}
+[72.039542] (-) TimerEvent: {}
+[72.139850] (-) TimerEvent: {}
+[72.240151] (-) TimerEvent: {}
+[72.340509] (-) TimerEvent: {}
+[72.440812] (-) TimerEvent: {}
+[72.541238] (-) TimerEvent: {}
+[72.641609] (-) TimerEvent: {}
+[72.732268] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[72.741709] (-) TimerEvent: {}
+[72.842025] (-) TimerEvent: {}
+[72.942353] (-) TimerEvent: {}
+[73.042649] (-) TimerEvent: {}
+[73.143030] (-) TimerEvent: {}
+[73.243381] (-) TimerEvent: {}
+[73.343688] (-) TimerEvent: {}
+[73.444068] (-) TimerEvent: {}
+[73.544461] (-) TimerEvent: {}
+[73.644782] (-) TimerEvent: {}
+[73.745121] (-) TimerEvent: {}
+[73.845471] (-) TimerEvent: {}
+[73.945862] (-) TimerEvent: {}
+[74.046208] (-) TimerEvent: {}
+[74.146548] (-) TimerEvent: {}
+[74.246870] (-) TimerEvent: {}
+[74.347225] (-) TimerEvent: {}
+[74.447635] (-) TimerEvent: {}
+[74.548095] (-) TimerEvent: {}
+[74.648431] (-) TimerEvent: {}
+[74.748800] (-) TimerEvent: {}
+[74.849205] (-) TimerEvent: {}
+[74.949532] (-) TimerEvent: {}
+[75.049891] (-) TimerEvent: {}
+[75.150251] (-) TimerEvent: {}
+[75.250583] (-) TimerEvent: {}
+[75.350870] (-) TimerEvent: {}
+[75.451181] (-) TimerEvent: {}
+[75.551595] (-) TimerEvent: {}
+[75.651909] (-) TimerEvent: {}
+[75.752199] (-) TimerEvent: {}
+[75.852499] (-) TimerEvent: {}
+[75.952934] (-) TimerEvent: {}
+[76.053304] (-) TimerEvent: {}
+[76.153700] (-) TimerEvent: {}
+[76.254040] (-) TimerEvent: {}
+[76.354364] (-) TimerEvent: {}
+[76.454785] (-) TimerEvent: {}
+[76.555252] (-) TimerEvent: {}
+[76.655547] (-) TimerEvent: {}
+[76.755885] (-) TimerEvent: {}
+[76.856209] (-) TimerEvent: {}
+[76.956598] (-) TimerEvent: {}
+[77.056969] (-) TimerEvent: {}
+[77.157290] (-) TimerEvent: {}
+[77.257703] (-) TimerEvent: {}
+[77.358070] (-) TimerEvent: {}
+[77.458408] (-) TimerEvent: {}
+[77.558704] (-) TimerEvent: {}
+[77.659220] (-) TimerEvent: {}
+[77.759529] (-) TimerEvent: {}
+[77.859997] (-) TimerEvent: {}
+[77.960402] (-) TimerEvent: {}
+[78.060775] (-) TimerEvent: {}
+[78.161199] (-) TimerEvent: {}
+[78.261542] (-) TimerEvent: {}
+[78.361843] (-) TimerEvent: {}
+[78.462206] (-) TimerEvent: {}
+[78.562546] (-) TimerEvent: {}
+[78.662866] (-) TimerEvent: {}
+[78.763236] (-) TimerEvent: {}
+[78.863649] (-) TimerEvent: {}
+[78.964012] (-) TimerEvent: {}
+[79.064341] (-) TimerEvent: {}
+[79.164695] (-) TimerEvent: {}
+[79.265117] (-) TimerEvent: {}
+[79.365460] (-) TimerEvent: {}
+[79.465886] (-) TimerEvent: {}
+[79.566363] (-) TimerEvent: {}
+[79.666663] (-) TimerEvent: {}
+[79.766970] (-) TimerEvent: {}
+[79.867379] (-) TimerEvent: {}
+[79.967763] (-) TimerEvent: {}
+[80.068214] (-) TimerEvent: {}
+[80.168615] (-) TimerEvent: {}
+[80.269127] (-) TimerEvent: {}
+[80.369549] (-) TimerEvent: {}
+[80.469883] (-) TimerEvent: {}
+[80.570241] (-) TimerEvent: {}
+[80.670656] (-) TimerEvent: {}
+[80.771077] (-) TimerEvent: {}
+[80.871504] (-) TimerEvent: {}
+[80.971954] (-) TimerEvent: {}
+[81.072375] (-) TimerEvent: {}
+[81.172774] (-) TimerEvent: {}
+[81.273193] (-) TimerEvent: {}
+[81.373549] (-) TimerEvent: {}
+[81.473860] (-) TimerEvent: {}
+[81.574184] (-) TimerEvent: {}
+[81.674592] (-) TimerEvent: {}
+[81.774901] (-) TimerEvent: {}
+[81.875231] (-) TimerEvent: {}
+[81.975551] (-) TimerEvent: {}
+[82.075993] (-) TimerEvent: {}
+[82.176387] (-) TimerEvent: {}
+[82.276751] (-) TimerEvent: {}
+[82.377131] (-) TimerEvent: {}
+[82.477522] (-) TimerEvent: {}
+[82.577873] (-) TimerEvent: {}
+[82.678216] (-) TimerEvent: {}
+[82.778571] (-) TimerEvent: {}
+[82.878910] (-) TimerEvent: {}
+[82.979301] (-) TimerEvent: {}
+[83.079642] (-) TimerEvent: {}
+[83.179970] (-) TimerEvent: {}
+[83.280339] (-) TimerEvent: {}
+[83.380775] (-) TimerEvent: {}
+[83.481195] (-) TimerEvent: {}
+[83.581595] (-) TimerEvent: {}
+[83.681956] (-) TimerEvent: {}
+[83.782320] (-) TimerEvent: {}
+[83.882645] (-) TimerEvent: {}
+[83.914649] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[83.916958] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[83.918864] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[83.920726] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[83.922510] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[83.924189] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[83.925137] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.14  \n'}
+[83.925857] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.14  \n'}
+[83.927268] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[83.929322] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[83.931195] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[83.933136] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[83.934913] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[83.936606] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[83.938440] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[83.940023] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[83.941514] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[83.943002] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[83.944744] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[83.946805] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[83.948193] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  \n'}
+[83.948845] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.14  \n'}
+[83.950140] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  \n'}
+[83.951938] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[83.953826] (unitree_lidar_ros) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[83.982796] (-) TimerEvent: {}
+[84.083266] (-) TimerEvent: {}
+[84.183749] (-) TimerEvent: {}
+[84.284241] (-) TimerEvent: {}
+[84.384621] (-) TimerEvent: {}
+[84.484973] (-) TimerEvent: {}
+[84.585400] (-) TimerEvent: {}
+[84.685806] (-) TimerEvent: {}
+[84.786191] (-) TimerEvent: {}
+[84.886593] (-) TimerEvent: {}
+[84.987025] (-) TimerEvent: {}
+[85.087422] (-) TimerEvent: {}
+[85.187900] (-) TimerEvent: {}
+[85.288360] (-) TimerEvent: {}
+[85.388705] (-) TimerEvent: {}
+[85.489064] (-) TimerEvent: {}
+[85.589396] (-) TimerEvent: {}
+[85.689789] (-) TimerEvent: {}
+[85.722684] (unitree_lidar_ros) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:11 (find_package):\n'}
+[85.723009] (unitree_lidar_ros) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[85.723129] (unitree_lidar_ros) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[85.723239] (unitree_lidar_ros) StderrLine: {'line': b'  CMake did not find one.\n'}
+[85.723338] (unitree_lidar_ros) StderrLine: {'line': b'\n'}
+[85.723424] (unitree_lidar_ros) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[85.723521] (unitree_lidar_ros) StderrLine: {'line': b'  of the following names:\n'}
+[85.723634] (unitree_lidar_ros) StderrLine: {'line': b'\n'}
+[85.723732] (unitree_lidar_ros) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[85.723800] (unitree_lidar_ros) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[85.723896] (unitree_lidar_ros) StderrLine: {'line': b'\n'}
+[85.723965] (unitree_lidar_ros) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[85.724061] (unitree_lidar_ros) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[85.724160] (unitree_lidar_ros) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[85.724254] (unitree_lidar_ros) StderrLine: {'line': b'  installed.\n'}
+[85.724327] (unitree_lidar_ros) StderrLine: {'line': b'\n'}
+[85.724420] (unitree_lidar_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[85.724494] (unitree_lidar_ros) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[85.743258] (unitree_lidar_ros) CommandEnded: {'returncode': 1}
+[85.769750] (unitree_lidar_ros) JobEnded: {'identifier': 'unitree_lidar_ros', 'rc': 1}
+[85.789883] (-) TimerEvent: {}
+[85.890177] (-) TimerEvent: {}
+[85.990540] (-) TimerEvent: {}
+[86.090924] (-) TimerEvent: {}
+[86.191228] (-) TimerEvent: {}
+[86.291561] (-) TimerEvent: {}
+[86.381234] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[86.382309] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[86.383377] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[86.384469] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[86.385608] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[86.386633] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[86.387114] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.14  \n'}
+[86.387642] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.14  \n'}
+[86.388742] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[86.389925] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[86.391453] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[86.391565] (-) TimerEvent: {}
+[86.392933] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[86.394136] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[86.395291] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[86.396427] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[86.397796] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[86.399332] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[86.400793] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[86.402120] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[86.403274] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[86.404265] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  \n'}
+[86.404776] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.14  \n'}
+[86.405319] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  \n'}
+[86.406728] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[86.408006] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[86.411641] (unitree_lidar_ros2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:23 (find_package):\n'}
+[86.411783] (unitree_lidar_ros2) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[86.411858] (unitree_lidar_ros2) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[86.411928] (unitree_lidar_ros2) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[86.411997] (unitree_lidar_ros2) StderrLine: {'line': b'\n'}
+[86.412065] (unitree_lidar_ros2) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[86.412132] (unitree_lidar_ros2) StderrLine: {'line': b'\n'}
+[86.412198] (unitree_lidar_ros2) StderrLine: {'line': b'    /usr\n'}
+[86.412285] (unitree_lidar_ros2) StderrLine: {'line': b'\n'}
+[86.412362] (unitree_lidar_ros2) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[86.412442] (unitree_lidar_ros2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[86.412510] (unitree_lidar_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[86.432711] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found tf2_ros: 0.40.1 (/opt/ros/rolling/share/tf2_ros/cmake)\n'}
+[86.491796] (-) TimerEvent: {}
+[86.592215] (-) TimerEvent: {}
+[86.692664] (-) TimerEvent: {}
+[86.793186] (-) TimerEvent: {}
+[86.872598] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Configuring done (86.7s)\n'}
+[86.893354] (-) TimerEvent: {}
+[86.993808] (-) TimerEvent: {}
+[87.094264] (-) TimerEvent: {}
+[87.104568] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[87.112382] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_ros2\n'}
+[87.140818] (unitree_lidar_ros2) JobEnded: {'identifier': 'unitree_lidar_ros2', 'rc': 'SIGINT'}
+[87.151581] (-) EventReactorShutdown: {}

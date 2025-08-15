@@ -1,8 +1,8 @@
-# Install script for directory: /home/fabian/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2
+# Install script for directory: /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/fabian/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2")
+  set(CMAKE_INSTALL_PREFIX "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,93 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/fabian/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/unitree_lidar_ros2/unitree_lidar_ros2_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/unitree_lidar_ros2/unitree_lidar_ros2_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/unitree_lidar_ros2/unitree_lidar_ros2_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/unitree_lidar_ros2" TYPE EXECUTABLE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/unitree_lidar_ros2_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/unitree_lidar_ros2/unitree_lidar_ros2_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/unitree_lidar_ros2/unitree_lidar_ros2_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/unitree_lidar_ros2/unitree_lidar_ros2_node"
+         OLD_RPATH "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/../../../unitree_lidar_sdk/lib/x86_64:/opt/ros/rolling/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/unitree_lidar_ros2/unitree_lidar_ros2_node")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/CMakeFiles/unitree_lidar_ros2_node.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2" TYPE FILE FILES
+    "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/rviz/view.rviz"
+    "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/launch/launch.py"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/unitree_lidar_ros2")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/unitree_lidar_ros2")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2/environment" TYPE FILE FILES "/opt/ros/rolling/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2/environment" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2/environment" TYPE FILE FILES "/opt/ros/rolling/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2/environment" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_index/share/ament_index/resource_index/packages/unitree_lidar_ros2")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2/cmake" TYPE FILE FILES
+    "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_core/unitree_lidar_ros2Config.cmake"
+    "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/ament_cmake_core/unitree_lidar_ros2Config-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_lidar_ros2" TYPE FILE FILES "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +140,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fabian/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/build/unitree_lidar_ros2/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

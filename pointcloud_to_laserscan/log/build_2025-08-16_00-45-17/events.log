@@ -1,0 +1,369 @@
+[0.000000] (-) TimerEvent: {}
+[0.000821] (pointcloud_to_laserscan) JobQueued: {'identifier': 'pointcloud_to_laserscan', 'dependencies': OrderedDict()}
+[0.000878] (pointcloud_to_laserscan) JobStarted: {'identifier': 'pointcloud_to_laserscan'}
+[0.015011] (pointcloud_to_laserscan) JobProgress: {'identifier': 'pointcloud_to_laserscan', 'progress': 'cmake'}
+[0.016817] (pointcloud_to_laserscan) Command: {'cmd': ['/usr/bin/cmake', '/home/fabian/yb_support/pointcloud_to_laserscan', '-DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan'], 'cwd': '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fabian', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/lib:/home/fabian/ros2_ws/install/ros2_control_demo_example_2/lib:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller/lib:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/fabian', 'OLDPWD': '/home/fabian/yb_support', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install:/home/fabian/yb_support/mecanum_drive_controller/install:/home/fabian/yb_support/twist_stamper/install:/home/fabian/ros2_ws/install:/home/fabian/youbot_ws/install:/home/fabian/yb_ros_odrive/odrive_ros2_control/install:/home/fabian/yahboom_rosmaster/install:/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install:/home/fabian/yb_lidar/unitree_lidar_ros2/install:/home/fabian/yb_support/unilidar_sdk2/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'fabian', 'NAME': 'DESKTOP-579AJL8', 'WSL_INTEROP': '/run/WSL/10912_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2404.1.68.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common64/:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common32/:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/Beckhoff/TcPkg/:/mnt/c/Program Files (x86)/AOMEI/AOMEI Backupper/7.4.1:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/MinGW/bin:/mnt/c/MinGW/mingw32/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/OpenSSL-Win64/bin/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/opencv/x64/vc15/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ros/jazzy/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/e/xmllint/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Windows Kits/10:/mnt/c/Users/fabia/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_ros2:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/rolling/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fabian/youbot_ws/build/youbot:/home/fabian/youbot_ws/install/youbot/lib/python3.12/site-packages:/home/fabian/yb_support/twist_stamper/install/twist_stamper/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_lidar/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_ros2:/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling', 'WSLENV': ''}), 'shell': False}
+[0.099704] (-) TimerEvent: {}
+[0.200052] (-) TimerEvent: {}
+[0.210806] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.300170] (-) TimerEvent: {}
+[0.400510] (-) TimerEvent: {}
+[0.500788] (-) TimerEvent: {}
+[0.601124] (-) TimerEvent: {}
+[0.701470] (-) TimerEvent: {}
+[0.801811] (-) TimerEvent: {}
+[0.902121] (-) TimerEvent: {}
+[1.002452] (-) TimerEvent: {}
+[1.102771] (-) TimerEvent: {}
+[1.143049] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.202903] (-) TimerEvent: {}
+[1.303201] (-) TimerEvent: {}
+[1.403549] (-) TimerEvent: {}
+[1.503904] (-) TimerEvent: {}
+[1.604230] (-) TimerEvent: {}
+[1.704549] (-) TimerEvent: {}
+[1.804858] (-) TimerEvent: {}
+[1.905207] (-) TimerEvent: {}
+[2.005550] (-) TimerEvent: {}
+[2.018072] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.105708] (-) TimerEvent: {}
+[2.206057] (-) TimerEvent: {}
+[2.306368] (-) TimerEvent: {}
+[2.389577] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.406506] (-) TimerEvent: {}
+[2.407133] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.407835] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.408826] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.506633] (-) TimerEvent: {}
+[2.568050] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.606758] (-) TimerEvent: {}
+[2.707077] (-) TimerEvent: {}
+[2.807372] (-) TimerEvent: {}
+[2.907756] (-) TimerEvent: {}
+[2.938095] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.947914] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.948286] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.948788] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.956948] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found ament_cmake: 2.7.2 (/opt/ros/rolling/share/ament_cmake/cmake)\n'}
+[3.007943] (-) TimerEvent: {}
+[3.108297] (-) TimerEvent: {}
+[3.189915] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.208446] (-) TimerEvent: {}
+[3.308768] (-) TimerEvent: {}
+[3.385724] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found laser_geometry: 2.10.0 (/opt/ros/rolling/share/laser_geometry/cmake)\n'}
+[3.408902] (-) TimerEvent: {}
+[3.509193] (-) TimerEvent: {}
+[3.609530] (-) TimerEvent: {}
+[3.686792] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_c/cmake)\n'}
+[3.709653] (-) TimerEvent: {}
+[3.718826] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)\n'}
+[3.754910] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.793114] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.809772] (-) TimerEvent: {}
+[3.910090] (-) TimerEvent: {}
+[3.939197] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found message_filters: 7.1.0 (/opt/ros/rolling/share/message_filters/cmake)\n'}
+[4.010251] (-) TimerEvent: {}
+[4.039699] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.8.1 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)\n'}
+[4.048810] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.3.1 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.110409] (-) TimerEvent: {}
+[4.203135] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[4.210521] (-) TimerEvent: {}
+[4.218409] (pointcloud_to_laserscan) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.310678] (-) TimerEvent: {}
+[4.410964] (-) TimerEvent: {}
+[4.511320] (-) TimerEvent: {}
+[4.522571] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found rclcpp_components: 29.4.0 (/opt/ros/rolling/share/rclcpp_components/cmake)\n'}
+[4.584442] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found tf2_ros: 0.40.1 (/opt/ros/rolling/share/tf2_ros/cmake)\n'}
+[4.611460] (-) TimerEvent: {}
+[4.711771] (-) TimerEvent: {}
+[4.737034] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found tf2_sensor_msgs: 0.40.1 (/opt/ros/rolling/share/tf2_sensor_msgs/cmake)\n'}
+[4.795598] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.19.1 (/opt/ros/rolling/share/ament_lint_auto/cmake)\n'}
+[4.811970] (-) TimerEvent: {}
+[4.912355] (-) TimerEvent: {}
+[5.012828] (-) TimerEvent: {}
+[5.060202] (pointcloud_to_laserscan) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.060739] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/fabian/yb_support/pointcloud_to_laserscan/include>\n'}
+[5.060921] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.076113] (pointcloud_to_laserscan) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.076321] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.080613] (pointcloud_to_laserscan) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.080856] (pointcloud_to_laserscan) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[5.086252] (pointcloud_to_laserscan) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.090030] (pointcloud_to_laserscan) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[5.101571] (pointcloud_to_laserscan) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.101778] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.104876] (pointcloud_to_laserscan) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.110152] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Configuring done (5.1s)\n'}
+[5.112909] (-) TimerEvent: {}
+[5.150292] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.161600] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Build files have been written to: /home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan\n'}
+[5.175454] (pointcloud_to_laserscan) CommandEnded: {'returncode': 0}
+[5.176164] (pointcloud_to_laserscan) JobProgress: {'identifier': 'pointcloud_to_laserscan', 'progress': 'build'}
+[5.177058] (pointcloud_to_laserscan) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan', '--', '-j7', '-l7'], 'cwd': '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fabian', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/lib:/home/fabian/ros2_ws/install/ros2_control_demo_example_2/lib:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller/lib:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/fabian', 'OLDPWD': '/home/fabian/yb_support', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install:/home/fabian/yb_support/mecanum_drive_controller/install:/home/fabian/yb_support/twist_stamper/install:/home/fabian/ros2_ws/install:/home/fabian/youbot_ws/install:/home/fabian/yb_ros_odrive/odrive_ros2_control/install:/home/fabian/yahboom_rosmaster/install:/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install:/home/fabian/yb_lidar/unitree_lidar_ros2/install:/home/fabian/yb_support/unilidar_sdk2/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'fabian', 'NAME': 'DESKTOP-579AJL8', 'WSL_INTEROP': '/run/WSL/10912_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2404.1.68.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common64/:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common32/:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/Beckhoff/TcPkg/:/mnt/c/Program Files (x86)/AOMEI/AOMEI Backupper/7.4.1:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/MinGW/bin:/mnt/c/MinGW/mingw32/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/OpenSSL-Win64/bin/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/opencv/x64/vc15/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ros/jazzy/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/e/xmllint/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Windows Kits/10:/mnt/c/Users/fabia/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_ros2:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/rolling/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fabian/youbot_ws/build/youbot:/home/fabian/youbot_ws/install/youbot/lib/python3.12/site-packages:/home/fabian/yb_support/twist_stamper/install/twist_stamper/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_lidar/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_ros2:/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling', 'WSLENV': ''}), 'shell': False}
+[5.213084] (-) TimerEvent: {}
+[5.265764] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_to_laserscan_node.dir/rclcpp_components/node_main_pointcloud_to_laserscan_node.cpp.o\x1b[0m\n'}
+[5.267381] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/laserscan_to_pointcloud_node.dir/rclcpp_components/node_main_laserscan_to_pointcloud_node.cpp.o\x1b[0m\n'}
+[5.270415] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/dummy_pointcloud_publisher.dir/src/dummy_pointcloud_publisher.cpp.o\x1b[0m\n'}
+[5.270942] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/laserscan_to_pointcloud.dir/src/laserscan_to_pointcloud_node.cpp.o\x1b[0m\n'}
+[5.272316] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_to_laserscan.dir/src/pointcloud_to_laserscan_node.cpp.o\x1b[0m\n'}
+[5.313491] (-) TimerEvent: {}
+[5.413899] (-) TimerEvent: {}
+[5.514304] (-) TimerEvent: {}
+[5.614698] (-) TimerEvent: {}
+[5.715163] (-) TimerEvent: {}
+[5.815576] (-) TimerEvent: {}
+[5.916044] (-) TimerEvent: {}
+[6.016502] (-) TimerEvent: {}
+[6.116915] (-) TimerEvent: {}
+[6.217331] (-) TimerEvent: {}
+[6.321234] (-) TimerEvent: {}
+[6.421822] (-) TimerEvent: {}
+[6.525231] (-) TimerEvent: {}
+[6.625551] (-) TimerEvent: {}
+[6.726010] (-) TimerEvent: {}
+[6.826548] (-) TimerEvent: {}
+[6.928167] (-) TimerEvent: {}
+[7.029582] (-) TimerEvent: {}
+[7.130095] (-) TimerEvent: {}
+[7.230537] (-) TimerEvent: {}
+[7.331039] (-) TimerEvent: {}
+[7.431590] (-) TimerEvent: {}
+[7.532161] (-) TimerEvent: {}
+[7.633273] (-) TimerEvent: {}
+[7.734556] (-) TimerEvent: {}
+[7.835564] (-) TimerEvent: {}
+[7.936081] (-) TimerEvent: {}
+[8.036507] (-) TimerEvent: {}
+[8.137041] (-) TimerEvent: {}
+[8.237573] (-) TimerEvent: {}
+[8.338128] (-) TimerEvent: {}
+[8.438634] (-) TimerEvent: {}
+[8.539189] (-) TimerEvent: {}
+[8.639624] (-) TimerEvent: {}
+[8.740146] (-) TimerEvent: {}
+[8.840594] (-) TimerEvent: {}
+[8.941170] (-) TimerEvent: {}
+[9.041617] (-) TimerEvent: {}
+[9.142162] (-) TimerEvent: {}
+[9.242670] (-) TimerEvent: {}
+[9.343194] (-) TimerEvent: {}
+[9.443640] (-) TimerEvent: {}
+[9.544126] (-) TimerEvent: {}
+[9.644699] (-) TimerEvent: {}
+[9.745217] (-) TimerEvent: {}
+[9.845717] (-) TimerEvent: {}
+[9.946220] (-) TimerEvent: {}
+[10.046687] (-) TimerEvent: {}
+[10.149531] (-) TimerEvent: {}
+[10.253382] (-) TimerEvent: {}
+[10.353866] (-) TimerEvent: {}
+[10.454296] (-) TimerEvent: {}
+[10.554861] (-) TimerEvent: {}
+[10.655382] (-) TimerEvent: {}
+[10.755834] (-) TimerEvent: {}
+[10.856297] (-) TimerEvent: {}
+[10.956749] (-) TimerEvent: {}
+[11.057233] (-) TimerEvent: {}
+[11.157666] (-) TimerEvent: {}
+[11.258175] (-) TimerEvent: {}
+[11.358637] (-) TimerEvent: {}
+[11.459136] (-) TimerEvent: {}
+[11.559627] (-) TimerEvent: {}
+[11.661290] (-) TimerEvent: {}
+[11.762032] (-) TimerEvent: {}
+[11.862907] (-) TimerEvent: {}
+[11.963331] (-) TimerEvent: {}
+[12.063842] (-) TimerEvent: {}
+[12.164300] (-) TimerEvent: {}
+[12.264744] (-) TimerEvent: {}
+[12.365109] (-) TimerEvent: {}
+[12.465551] (-) TimerEvent: {}
+[12.565870] (-) TimerEvent: {}
+[12.609804] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable pointcloud_to_laserscan_node\x1b[0m\n'}
+[12.666050] (-) TimerEvent: {}
+[12.715448] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable laserscan_to_pointcloud_node\x1b[0m\n'}
+[12.766242] (-) TimerEvent: {}
+[12.866683] (-) TimerEvent: {}
+[12.967130] (-) TimerEvent: {}
+[13.045090] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 70%] Built target pointcloud_to_laserscan_node\n'}
+[13.067326] (-) TimerEvent: {}
+[13.167822] (-) TimerEvent: {}
+[13.170339] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 70%] Built target laserscan_to_pointcloud_node\n'}
+[13.267995] (-) TimerEvent: {}
+[13.368465] (-) TimerEvent: {}
+[13.468825] (-) TimerEvent: {}
+[13.569234] (-) TimerEvent: {}
+[13.669876] (-) TimerEvent: {}
+[13.770388] (-) TimerEvent: {}
+[13.870829] (-) TimerEvent: {}
+[13.971304] (-) TimerEvent: {}
+[14.071725] (-) TimerEvent: {}
+[14.172082] (-) TimerEvent: {}
+[14.272438] (-) TimerEvent: {}
+[14.303142] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable dummy_pointcloud_publisher\x1b[0m\n'}
+[14.372607] (-) TimerEvent: {}
+[14.473051] (-) TimerEvent: {}
+[14.573574] (-) TimerEvent: {}
+[14.673947] (-) TimerEvent: {}
+[14.774366] (-) TimerEvent: {}
+[14.804990] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 80%] Built target dummy_pointcloud_publisher\n'}
+[14.874540] (-) TimerEvent: {}
+[14.974881] (-) TimerEvent: {}
+[15.075200] (-) TimerEvent: {}
+[15.175555] (-) TimerEvent: {}
+[15.275950] (-) TimerEvent: {}
+[15.376330] (-) TimerEvent: {}
+[15.476659] (-) TimerEvent: {}
+[15.577023] (-) TimerEvent: {}
+[15.677336] (-) TimerEvent: {}
+[15.777716] (-) TimerEvent: {}
+[15.878078] (-) TimerEvent: {}
+[15.978491] (-) TimerEvent: {}
+[16.078822] (-) TimerEvent: {}
+[16.179163] (-) TimerEvent: {}
+[16.279527] (-) TimerEvent: {}
+[16.380113] (-) TimerEvent: {}
+[16.480509] (-) TimerEvent: {}
+[16.580864] (-) TimerEvent: {}
+[16.681272] (-) TimerEvent: {}
+[16.781709] (-) TimerEvent: {}
+[16.882101] (-) TimerEvent: {}
+[16.982482] (-) TimerEvent: {}
+[17.082906] (-) TimerEvent: {}
+[17.183289] (-) TimerEvent: {}
+[17.283641] (-) TimerEvent: {}
+[17.384016] (-) TimerEvent: {}
+[17.484348] (-) TimerEvent: {}
+[17.584734] (-) TimerEvent: {}
+[17.685184] (-) TimerEvent: {}
+[17.785586] (-) TimerEvent: {}
+[17.885951] (-) TimerEvent: {}
+[17.986360] (-) TimerEvent: {}
+[18.086762] (-) TimerEvent: {}
+[18.187174] (-) TimerEvent: {}
+[18.287530] (-) TimerEvent: {}
+[18.387933] (-) TimerEvent: {}
+[18.488318] (-) TimerEvent: {}
+[18.588733] (-) TimerEvent: {}
+[18.689216] (-) TimerEvent: {}
+[18.789591] (-) TimerEvent: {}
+[18.889912] (-) TimerEvent: {}
+[18.990258] (-) TimerEvent: {}
+[19.090611] (-) TimerEvent: {}
+[19.190934] (-) TimerEvent: {}
+[19.291267] (-) TimerEvent: {}
+[19.391610] (-) TimerEvent: {}
+[19.491938] (-) TimerEvent: {}
+[19.592276] (-) TimerEvent: {}
+[19.692579] (-) TimerEvent: {}
+[19.792954] (-) TimerEvent: {}
+[19.893435] (-) TimerEvent: {}
+[19.993823] (-) TimerEvent: {}
+[20.094207] (-) TimerEvent: {}
+[20.194613] (-) TimerEvent: {}
+[20.295050] (-) TimerEvent: {}
+[20.395441] (-) TimerEvent: {}
+[20.495882] (-) TimerEvent: {}
+[20.596366] (-) TimerEvent: {}
+[20.696747] (-) TimerEvent: {}
+[20.797123] (-) TimerEvent: {}
+[20.897543] (-) TimerEvent: {}
+[20.997976] (-) TimerEvent: {}
+[21.098376] (-) TimerEvent: {}
+[21.198768] (-) TimerEvent: {}
+[21.299115] (-) TimerEvent: {}
+[21.399468] (-) TimerEvent: {}
+[21.499793] (-) TimerEvent: {}
+[21.600175] (-) TimerEvent: {}
+[21.700529] (-) TimerEvent: {}
+[21.800906] (-) TimerEvent: {}
+[21.901301] (-) TimerEvent: {}
+[22.001599] (-) TimerEvent: {}
+[22.101952] (-) TimerEvent: {}
+[22.202260] (-) TimerEvent: {}
+[22.302576] (-) TimerEvent: {}
+[22.402922] (-) TimerEvent: {}
+[22.503225] (-) TimerEvent: {}
+[22.603562] (-) TimerEvent: {}
+[22.703975] (-) TimerEvent: {}
+[22.804277] (-) TimerEvent: {}
+[22.904611] (-) TimerEvent: {}
+[23.004939] (-) TimerEvent: {}
+[23.105295] (-) TimerEvent: {}
+[23.205638] (-) TimerEvent: {}
+[23.305969] (-) TimerEvent: {}
+[23.406307] (-) TimerEvent: {}
+[23.506639] (-) TimerEvent: {}
+[23.606929] (-) TimerEvent: {}
+[23.707256] (-) TimerEvent: {}
+[23.807618] (-) TimerEvent: {}
+[23.907943] (-) TimerEvent: {}
+[24.008277] (-) TimerEvent: {}
+[24.108609] (-) TimerEvent: {}
+[24.208967] (-) TimerEvent: {}
+[24.309338] (-) TimerEvent: {}
+[24.409676] (-) TimerEvent: {}
+[24.509983] (-) TimerEvent: {}
+[24.610373] (-) TimerEvent: {}
+[24.710724] (-) TimerEvent: {}
+[24.811160] (-) TimerEvent: {}
+[24.911576] (-) TimerEvent: {}
+[24.936855] (pointcloud_to_laserscan) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX shared library liblaserscan_to_pointcloud.so\x1b[0m\n'}
+[25.011714] (-) TimerEvent: {}
+[25.112080] (-) TimerEvent: {}
+[25.210851] (pointcloud_to_laserscan) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libpointcloud_to_laserscan.so\x1b[0m\n'}
+[25.212176] (-) TimerEvent: {}
+[25.312493] (-) TimerEvent: {}
+[25.412872] (-) TimerEvent: {}
+[25.513257] (-) TimerEvent: {}
+[25.613656] (-) TimerEvent: {}
+[25.714168] (-) TimerEvent: {}
+[25.810747] (pointcloud_to_laserscan) StdoutLine: {'line': b'[100%] Built target laserscan_to_pointcloud\n'}
+[25.814310] (-) TimerEvent: {}
+[25.914732] (-) TimerEvent: {}
+[26.015132] (-) TimerEvent: {}
+[26.097071] (pointcloud_to_laserscan) StdoutLine: {'line': b'[100%] Built target pointcloud_to_laserscan\n'}
+[26.115469] (pointcloud_to_laserscan) CommandEnded: {'returncode': 0}
+[26.116085] (-) TimerEvent: {}
+[26.116719] (pointcloud_to_laserscan) JobProgress: {'identifier': 'pointcloud_to_laserscan', 'progress': 'install'}
+[26.130788] (pointcloud_to_laserscan) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan'], 'cwd': '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fabian', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/lib:/home/fabian/ros2_ws/install/ros2_control_demo_example_2/lib:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller/lib:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/fabian', 'OLDPWD': '/home/fabian/yb_support', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/fabian/yb_support/pointcloud_to_laserscan/install:/home/fabian/yb_support/mecanum_drive_controller/install:/home/fabian/yb_support/twist_stamper/install:/home/fabian/ros2_ws/install:/home/fabian/youbot_ws/install:/home/fabian/yb_ros_odrive/odrive_ros2_control/install:/home/fabian/yahboom_rosmaster/install:/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install:/home/fabian/yb_lidar/unitree_lidar_ros2/install:/home/fabian/yb_support/unilidar_sdk2/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'fabian', 'NAME': 'DESKTOP-579AJL8', 'WSL_INTEROP': '/run/WSL/10912_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2404.1.68.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common64/:/mnt/c/Program Files (x86)/Beckhoff/TwinCAT/Common32/:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/Beckhoff/TcPkg/:/mnt/c/Program Files (x86)/AOMEI/AOMEI Backupper/7.4.1:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/MinGW/bin:/mnt/c/MinGW/mingw32/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/OpenSSL-Win64/bin/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/opencv/x64/vc15/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ros/jazzy/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/e/xmllint/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Windows Kits/10:/mnt/c/Users/fabia/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_ros2:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/rolling/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fabian/youbot_ws/build/youbot:/home/fabian/youbot_ws/install/youbot/lib/python3.12/site-packages:/home/fabian/yb_support/twist_stamper/install/twist_stamper/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_lidar/unitree_lidar_ros2/install/unitree_lidar_ros2:/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_ros2:/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan:/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller:/home/fabian/ros2_ws/install/ros2_control_demo_example_2:/home/fabian/ros2_ws/install/ros2_control_demo_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_system_tests:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_navigation:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_msgs:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_localization:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_gazebo:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_docking:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_description:/home/fabian/yahboom_rosmaster/install/yahboom_rosmaster_bringup:/home/fabian/yahboom_rosmaster/install/mecanum_drive_controller:/home/fabian/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling', 'WSLENV': ''}), 'shell': False}
+[26.144492] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.145503] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/laserscan_to_pointcloud_node\n'}
+[26.146437] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/laserscan_to_pointcloud_node" to ""\n'}
+[26.146669] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/pointcloud_to_laserscan_node\n'}
+[26.147496] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/pointcloud_to_laserscan_node" to ""\n'}
+[26.147810] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/liblaserscan_to_pointcloud.so\n'}
+[26.157265] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/liblaserscan_to_pointcloud.so" to ""\n'}
+[26.157441] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/libpointcloud_to_laserscan.so\n'}
+[26.169745] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/libpointcloud_to_laserscan.so" to ""\n'}
+[26.170072] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/dummy_pointcloud_publisher\n'}
+[26.172660] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/dummy_pointcloud_publisher" to ""\n'}
+[26.173031] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/include\n'}
+[26.174002] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/include/pointcloud_to_laserscan\n'}
+[26.174411] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/include/pointcloud_to_laserscan/laserscan_to_pointcloud_node.hpp\n'}
+[26.174756] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/include/pointcloud_to_laserscan/pointcloud_to_laserscan_node.hpp\n'}
+[26.175072] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/include/pointcloud_to_laserscan/visibility_control.h\n'}
+[26.175445] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch\n'}
+[26.176177] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch/sample_pointcloud_to_laserscan_launch.py\n'}
+[26.182849] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch/sample_laserscan_to_pointcloud_launch.py\n'}
+[26.184758] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/ament_index/resource_index/package_run_dependencies/pointcloud_to_laserscan\n'}
+[26.185404] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/ament_index/resource_index/parent_prefix_path/pointcloud_to_laserscan\n'}
+[26.186063] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/ament_prefix_path.sh\n'}
+[26.186418] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/ament_prefix_path.dsv\n'}
+[26.186710] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/path.sh\n'}
+[26.186997] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/path.dsv\n'}
+[26.187301] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.bash\n'}
+[26.187672] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.sh\n'}
+[26.188039] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.zsh\n'}
+[26.188430] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.dsv\n'}
+[26.188697] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.dsv\n'}
+[26.193751] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/ament_index/resource_index/packages/pointcloud_to_laserscan\n'}
+[26.194255] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/ament_index/resource_index/rclcpp_components/pointcloud_to_laserscan\n'}
+[26.194751] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[26.194983] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/pointcloud_to_laserscanConfig.cmake\n'}
+[26.195315] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/pointcloud_to_laserscanConfig-version.cmake\n'}
+[26.195422] (pointcloud_to_laserscan) StdoutLine: {'line': b'-- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.xml\n'}
+[26.197856] (pointcloud_to_laserscan) CommandEnded: {'returncode': 0}
+[26.216442] (-) TimerEvent: {}
+[26.218262] (pointcloud_to_laserscan) JobEnded: {'identifier': 'pointcloud_to_laserscan', 'rc': 0}
+[26.219590] (-) EventReactorShutdown: {}

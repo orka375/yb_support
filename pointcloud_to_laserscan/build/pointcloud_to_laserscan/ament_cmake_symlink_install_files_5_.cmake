@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/fabian/yb_support/pointcloud_to_laserscan" FILES "/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/pointcloud_to_laserscan/environment")

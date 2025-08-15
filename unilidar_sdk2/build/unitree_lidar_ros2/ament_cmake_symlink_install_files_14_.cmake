@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/fabian/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2" FILES "/home/fabian/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/package.xml" "DESTINATION" "share/unitree_lidar_ros2")

@@ -1,0 +1,96 @@
+[0.016s] Invoking command in '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fabian/yb_support/pointcloud_to_laserscan -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan
+[0.217s] -- The C compiler identification is GNU 13.3.0
+[1.194s] -- The CXX compiler identification is GNU 13.3.0
+[2.121s] -- Detecting C compiler ABI info
+[2.505s] -- Detecting C compiler ABI info - done
+[2.515s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.515s] -- Detecting C compile features
+[2.515s] -- Detecting C compile features - done
+[2.671s] -- Detecting CXX compiler ABI info
+[3.084s] -- Detecting CXX compiler ABI info - done
+[3.094s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.094s] -- Detecting CXX compile features
+[3.094s] -- Detecting CXX compile features - done
+[3.103s] -- Found ament_cmake: 2.7.2 (/opt/ros/rolling/share/ament_cmake/cmake)
+[3.331s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.418s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.524s] -- Found laser_geometry: 2.10.0 (/opt/ros/rolling/share/laser_geometry/cmake)
+[3.858s] -- Found rosidl_generator_c: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+[3.890s] -- Found rosidl_generator_cpp: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+[3.927s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.964s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.118s] -- Found message_filters: 7.1.0 (/opt/ros/rolling/share/message_filters/cmake)
+[4.228s] -- Found rmw_implementation_cmake: 7.8.1 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)
+[4.236s] -- Found rmw_fastrtps_cpp: 9.3.1 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)
+[4.397s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.416s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.762s] -- Found rclcpp_components: 29.4.0 (/opt/ros/rolling/share/rclcpp_components/cmake)
+[4.832s] -- Found tf2_ros: 0.40.1 (/opt/ros/rolling/share/tf2_ros/cmake)
+[4.972s] -- Found tf2_sensor_msgs: 0.40.1 (/opt/ros/rolling/share/tf2_sensor_msgs/cmake)
+[4.991s] -- Found ament_lint_auto: 0.19.1 (/opt/ros/rolling/share/ament_lint_auto/cmake)
+[5.187s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.187s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/fabian/yb_support/pointcloud_to_laserscan/include>
+[5.187s] -- Configured cppcheck exclude dirs and/or files: 
+[5.198s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.198s] -- Configured cpplint exclude dirs and/or files: 
+[5.202s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.202s] -- Configured 'flake8' exclude dirs and/or files: 
+[5.206s] -- Added test 'lint_cmake' to check CMake code style
+[5.210s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.222s] -- Added test 'uncrustify' to check C / C++ code style
+[5.222s] -- Configured uncrustify additional arguments: 
+[5.226s] -- Added test 'xmllint' to check XML markup files
+[5.233s] -- Configuring done (5.2s)
+[5.275s] -- Generating done (0.0s)
+[5.286s] -- Build files have been written to: /home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan
+[5.301s] Invoked command in '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fabian/yb_support/pointcloud_to_laserscan -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan
+[5.302s] Invoking command in '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan -- -j7 -l7
+[5.394s] [ 10%] [32mBuilding CXX object CMakeFiles/pointcloud_to_laserscan.dir/src/pointcloud_to_laserscan_node.cpp.o[0m
+[5.394s] [ 20%] [32mBuilding CXX object CMakeFiles/dummy_pointcloud_publisher.dir/src/dummy_pointcloud_publisher.cpp.o[0m
+[5.397s] [ 40%] [32mBuilding CXX object CMakeFiles/laserscan_to_pointcloud.dir/src/laserscan_to_pointcloud_node.cpp.o[0m
+[5.397s] [ 50%] [32mBuilding CXX object CMakeFiles/pointcloud_to_laserscan_node.dir/rclcpp_components/node_main_pointcloud_to_laserscan_node.cpp.o[0m
+[5.397s] [ 50%] [32mBuilding CXX object CMakeFiles/laserscan_to_pointcloud_node.dir/rclcpp_components/node_main_laserscan_to_pointcloud_node.cpp.o[0m
+[12.777s] [ 60%] [32m[1mLinking CXX executable pointcloud_to_laserscan_node[0m
+[12.917s] [ 70%] [32m[1mLinking CXX executable laserscan_to_pointcloud_node[0m
+[13.376s] [ 70%] Built target pointcloud_to_laserscan_node
+[13.415s] [ 70%] Built target laserscan_to_pointcloud_node
+[14.625s] [ 80%] [32m[1mLinking CXX executable dummy_pointcloud_publisher[0m
+[15.112s] [ 80%] Built target dummy_pointcloud_publisher
+[25.888s] [ 90%] [32m[1mLinking CXX shared library liblaserscan_to_pointcloud.so[0m
+[26.021s] [100%] [32m[1mLinking CXX shared library libpointcloud_to_laserscan.so[0m
+[26.913s] [100%] Built target laserscan_to_pointcloud
+[26.994s] [100%] Built target pointcloud_to_laserscan
+[27.012s] Invoked command in '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan -- -j7 -l7
+[27.029s] Invoking command in '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan
+[27.046s] -- Install configuration: ""
+[27.046s] -- Execute custom install script
+[27.048s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/laserscan_to_pointcloud_node
+[27.063s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/pointcloud_to_laserscan_node
+[27.079s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/dummy_pointcloud_publisher
+[27.099s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/include/pointcloud_to_laserscan/laserscan_to_pointcloud_node.hpp
+[27.116s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/include/pointcloud_to_laserscan/pointcloud_to_laserscan_node.hpp
+[27.134s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/include/pointcloud_to_laserscan/visibility_control.h
+[27.152s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch/sample_laserscan_to_pointcloud_launch.py
+[27.168s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch/sample_pointcloud_to_laserscan_launch.py
+[27.185s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/ament_index/resource_index/package_run_dependencies/pointcloud_to_laserscan
+[27.205s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/ament_index/resource_index/parent_prefix_path/pointcloud_to_laserscan
+[27.222s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/ament_prefix_path.sh
+[27.240s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/ament_prefix_path.dsv
+[27.258s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/path.sh
+[27.274s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/path.dsv
+[27.290s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.bash
+[27.306s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.sh
+[27.323s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.zsh
+[27.343s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.dsv
+[27.359s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.dsv
+[27.376s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/ament_index/resource_index/packages/pointcloud_to_laserscan
+[27.392s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/ament_index/resource_index/rclcpp_components/pointcloud_to_laserscan
+[27.411s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/ament_cmake_export_dependencies-extras.cmake
+[27.427s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/pointcloud_to_laserscanConfig.cmake
+[27.442s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/pointcloud_to_laserscanConfig-version.cmake
+[27.459s] -- Symlinking: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.xml
+[27.476s] -- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/liblaserscan_to_pointcloud.so
+[27.485s] -- Set non-toolchain portion of runtime path of "/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/liblaserscan_to_pointcloud.so" to ""
+[27.485s] -- Installing: /home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/libpointcloud_to_laserscan.so
+[27.497s] -- Set non-toolchain portion of runtime path of "/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/libpointcloud_to_laserscan.so" to ""
+[27.500s] Invoked command in '/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/home/fabian/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/fabian/yb_support/mecanum_drive_controller" FILES "/opt/ros/rolling/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/mecanum_drive_controller/environment")

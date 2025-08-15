@@ -1,0 +1,7 @@
+[0.034s] Invoking command in '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk -- -j7 -l7
+[0.175s] [ 20%] Built target example_lidar_udp
+[0.175s] [ 40%] Built target set_to_udp_mode
+[0.182s] [ 60%] Built target example_lidar_serial
+[0.183s] [ 80%] Built target set_ip_address
+[0.187s] [100%] Built target set_to_serial_mode
+[0.214s] Invoked command in '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk -- -j7 -l7

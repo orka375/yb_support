@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-06b68a023018f29d7f01.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mecanum_drive_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mecanum_drive_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mecanum_drive_controller-c1612b0389db7911cd6a.json",
+					"name" : "mecanum_drive_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mecanum_drive_controller_parameters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mecanum_drive_controller_parameters-b4fe81542759e22e6e8c.json",
+					"name" : "mecanum_drive_controller_parameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mecanum_drive_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mecanum_drive_controller_uninstall-4fd1eb473a90afd8993a.json",
+					"name" : "mecanum_drive_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d647123329d0e5bedabb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller",
+		"source" : "/home/fabian/yb_support/mecanum_drive_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

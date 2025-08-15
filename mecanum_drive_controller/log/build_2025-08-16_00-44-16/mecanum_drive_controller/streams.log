@@ -1,0 +1,79 @@
+[0.018s] Invoking command in '/home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fabian/yb_support/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller
+[0.233s] -- The CXX compiler identification is GNU 13.3.0
+[1.112s] -- Detecting CXX compiler ABI info
+[1.507s] -- Detecting CXX compiler ABI info - done
+[1.517s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.517s] -- Detecting CXX compile features
+[1.517s] -- Detecting CXX compile features - done
+[1.525s] -- Found ament_cmake: 2.7.2 (/opt/ros/rolling/share/ament_cmake/cmake)
+[1.764s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.000s] -- Found controller_interface: 4.27.0 (/opt/ros/rolling/share/controller_interface/cmake)
+[2.369s] -- Found rosidl_generator_c: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+[2.400s] -- Found rosidl_generator_cpp: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+[2.436s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.473s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.844s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[2.938s] -- Found rmw_implementation_cmake: 7.8.1 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)
+[2.948s] -- Found rmw_fastrtps_cpp: 9.3.1 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)
+[3.007s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[3.097s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.102s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[3.112s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.012s] -- Found generate_parameter_library: 0.4.0 (/opt/ros/rolling/share/generate_parameter_library/cmake)
+[4.033s] -- Found parameter_traits: 0.4.0 (/opt/ros/rolling/share/parameter_traits/cmake)
+[4.095s] -- Found nav_msgs: 5.5.0 (/opt/ros/rolling/share/nav_msgs/cmake)
+[4.161s] -- Found tf2: 0.40.1 (/opt/ros/rolling/share/tf2/cmake)
+[4.174s] -- Found tf2_msgs: 0.40.1 (/opt/ros/rolling/share/tf2_msgs/cmake)
+[4.235s] -- Found ament_cmake_gmock: 2.7.2 (/opt/ros/rolling/share/ament_cmake_gmock/cmake)
+[4.250s] -- Found controller_manager: 4.27.0 (/opt/ros/rolling/share/controller_manager/cmake)
+[4.405s] -- Found ros2_control_test_assets: 4.27.0 (/opt/ros/rolling/share/ros2_control_test_assets/cmake)
+[4.522s] -- Configuring done (4.5s)
+[4.582s] -- Generating done (0.0s)
+[4.590s] -- Build files have been written to: /home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller
+[4.607s] Invoked command in '/home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fabian/yb_support/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller
+[4.608s] Invoking command in '/home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller -- -j7 -l7
+[4.701s] [ 16%] [34m[1mRunning `/opt/ros/rolling/bin/generate_parameter_library_cpp /home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp /home/fabian/yb_support/mecanum_drive_controller/src/mecanum_drive_controller_parameter.yaml `[0m
+[6.414s] [ 33%] [34m[1mCreating deprecated header file /home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller/include/mecanum_drive_controller_parameters.hpp[0m
+[6.492s] [ 33%] Built target mecanum_drive_controller_parameters
+[6.530s] [ 50%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[6.534s] [ 66%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/speed_limiter.cpp.o[0m
+[6.534s] [ 83%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o[0m
+[20.776s] [100%] [32m[1mLinking CXX shared library libmecanum_drive_controller.so[0m
+[21.912s] [100%] Built target mecanum_drive_controller
+[21.931s] Invoked command in '/home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller -- -j7 -l7
+[21.948s] Invoking command in '/home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller
+[21.962s] -- Install configuration: ""
+[21.962s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/include/mecanum_drive_controller
+[21.963s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp
+[21.964s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_plugin.xml
+[21.964s] -- Up-to-date: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/include/mecanum_drive_controller
+[21.964s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller
+[21.965s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/speed_limiter.hpp
+[21.965s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp
+[21.965s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h
+[21.965s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp
+[21.966s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so
+[21.975s] -- Set non-toolchain portion of runtime path of "/home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so" to ""
+[21.976s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh
+[21.976s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv
+[21.977s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller
+[21.977s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller
+[21.978s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh
+[21.978s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv
+[21.978s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh
+[21.978s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv
+[21.979s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash
+[21.979s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh
+[21.979s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh
+[21.979s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv
+[21.979s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv
+[21.980s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller
+[21.980s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller
+[21.981s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake
+[21.981s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake
+[21.981s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[21.981s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[21.982s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake
+[21.982s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake
+[21.982s] -- Installing: /home/fabian/yb_support/mecanum_drive_controller/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml
+[21.985s] Invoked command in '/home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller

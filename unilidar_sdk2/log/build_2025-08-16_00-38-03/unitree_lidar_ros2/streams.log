@@ -1,0 +1,51 @@
+[0.037s] Invoking command in '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_ros2
+[0.708s] -- The C compiler identification is GNU 13.3.0
+[3.145s] -- The CXX compiler identification is GNU 13.3.0
+[5.543s] -- Detecting C compiler ABI info
+[6.414s] -- Detecting C compiler ABI info - done
+[6.434s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.435s] -- Detecting C compile features
+[6.435s] -- Detecting C compile features - done
+[6.783s] -- Detecting CXX compiler ABI info
+[7.778s] -- Detecting CXX compiler ABI info - done
+[7.805s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.805s] -- Detecting CXX compile features
+[7.806s] -- Detecting CXX compile features - done
+[7.828s] -- Found ament_cmake: 2.7.2 (/opt/ros/rolling/share/ament_cmake/cmake)
+[8.261s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[8.640s] -- Found rclcpp: 29.4.0 (/opt/ros/rolling/share/rclcpp/cmake)
+[9.332s] -- Found rosidl_generator_c: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+[9.405s] -- Found rosidl_generator_cpp: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+[9.540s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.644s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.992s] -- Found rmw_implementation_cmake: 7.8.1 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)
+[10.015s] -- Found rmw_fastrtps_cpp: 9.3.1 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)
+[10.396s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[10.447s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.398s] -- Found std_msgs: 5.5.0 (/opt/ros/rolling/share/std_msgs/cmake)
+[11.473s] -- Found geometry_msgs: 5.5.0 (/opt/ros/rolling/share/geometry_msgs/cmake)
+[11.543s] -- Found pcl_conversions: 2.6.3 (/opt/ros/rolling/share/pcl_conversions/cmake)
+[12.082s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[12.082s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[12.082s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[12.083s]   cmake_policy command to set the policy and suppress this warning.
+[12.083s] 
+[12.083s]   CMake variable FLANN_ROOT is set to:
+[12.083s] 
+[12.083s]     /usr
+[12.083s] 
+[12.083s]   For compatibility, find_package is ignoring the variable, but code in a
+[12.083s]   .cmake module might still use it.
+[12.083s] Call Stack (most recent call first):
+[12.083s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[12.083s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[12.084s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[12.084s]   /opt/ros/rolling/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[12.084s]   /opt/ros/rolling/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[12.084s]   CMakeLists.txt:22 (find_package)
+[12.084s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.084s] [0m
+[12.091s] -- Found flann version 1.9.2
+[14.194s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[14.195s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[14.974s] Invoked command in '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_ros2' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabian/youbot_ws/install/youbot:/home/fabian/yb_support/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/fabian/yb_support/unilidar_sdk2/install/unitree_lidar_ros2
