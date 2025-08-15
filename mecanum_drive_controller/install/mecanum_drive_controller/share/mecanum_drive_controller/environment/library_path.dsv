@@ -1,1 +1,1 @@
-prepend-non-duplicate;LD_LIBRARY_PATH;lib
+/home/fabian/yb_support/mecanum_drive_controller/build/mecanum_drive_controller/ament_cmake_environment_hooks/library_path.dsv

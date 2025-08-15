@@ -23,10 +23,9 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/opt/ros/rolling\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/home/fabian/yb_lidar/unitree_lidar_ros2/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/fabian/yb_support/yb_ros_odrive/odrive_ros2_control/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/fabian/yb_support/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/fabian/yahboom_rosmaster/install\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/home/fabian/yb_ros_odrive/odrive_ros2_control/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/fabian/youbot_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/fabian/ros2_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/fabian/yb_support/twist_stamper/install\local_setup.ps1"
