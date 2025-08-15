@@ -1,0 +1,19 @@
+
+
+.github/
+# colcon output
+/build/
+/install/
+/log/
+
+# Python
+__pycache__/
+
+# OS files
+.DS_Store
+install/
+build/
+log/
+.vscode/
+*.log
+*.tmp
