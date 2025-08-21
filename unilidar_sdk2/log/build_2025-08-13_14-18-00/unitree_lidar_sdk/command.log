@@ -1,2 +1,0 @@
-Invoking command in '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk -- -j7 -l7
-Invoked command in '/home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fabian/yb_support/unilidar_sdk2/build/unitree_lidar_sdk -- -j7 -l7

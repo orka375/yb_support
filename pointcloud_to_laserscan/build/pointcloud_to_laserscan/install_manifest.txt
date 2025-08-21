@@ -1,2 +1,0 @@
-/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/liblaserscan_to_pointcloud.so
-/home/fabian/yb_support/pointcloud_to_laserscan/install/pointcloud_to_laserscan/lib/libpointcloud_to_laserscan.so

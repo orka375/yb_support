@@ -1,1 +1,0 @@
-/home/fabian/yb_support/pointcloud_to_laserscan/build/pointcloud_to_laserscan/ament_cmake_environment_hooks/local_setup.sh
