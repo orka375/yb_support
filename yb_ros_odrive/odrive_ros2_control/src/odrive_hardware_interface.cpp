@@ -364,14 +364,14 @@ void Axis::on_can_msg(const rclcpp::Time&, const can_frame& frame) {
     switch (cmd) {
         case Get_Encoder_Estimates_msg_t::cmd_id: {
             if (Get_Encoder_Estimates_msg_t msg; try_decode(msg)) {
-                double pos = msg.Pos_Estimate * (2 * M_PI) / 26;  //nbf2 /26 = transmission
-                double vel = msg.Vel_Estimate * (2 * M_PI) / 26;  //nbf2 /26 = transmission
+                double pos = msg.Pos_Estimate * (2 * M_PI) /this->transmission_;  //nbf2 /26 = transmission
+                double vel = msg.Vel_Estimate * (2 * M_PI) /this->transmission_;  //nbf2 /26 = transmission
 
-                // Invert for front right and back right  //nbf2
-                if (name_ == "wheel_joint_fr" || name_ == "wheel_joint_br") {
-                    pos *= -1.0;
-                    vel *= -1.0;
-                }
+                // // Invert for front right and back right  //nbf2
+                // if (name_ == "wheel_joint_fr" || name_ == "wheel_joint_br") {
+                //     pos *= -1.0;
+                //     vel *= -1.0;
+                // }
 
                 pos_estimate_ = pos;
                 vel_estimate_ = vel;
