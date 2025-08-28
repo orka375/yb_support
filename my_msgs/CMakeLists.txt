@@ -9,13 +9,19 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(std_srvs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/Pose2D.msg"
+	"msg/PoseStampedJoints.msg"
+	"srv/SavePose.srv"
 	DEPENDENCIES std_msgs
+	DEPENDENCIES geometry_msgs
+	DEPENDENCIES std_srvs
 )
 
 

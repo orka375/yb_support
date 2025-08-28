@@ -26,7 +26,7 @@
 #include "rclcpp/time.hpp"
 
 #include "tf2_ros/transform_broadcaster.h"
-#include "tf2/LinearMath/Quaternion.h"
+#include "tf2/LinearMath/Quaternion.hpp"
 #include "geometry_msgs/msg/transform_stamped.hpp"
 
 // SDK
