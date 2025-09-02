@@ -1,0 +1,13 @@
+source /opt/ros/rolling/setup.bash
+source ~/youbot_ws/install/setup.bash
+source ~/yb_support/yb_ros_odrive/install/setup.bash
+source ~/yb_support/mecanum_drive_controller/install/setup.bash
+source ~/yb_support/twist_stamper/install/setup.bash
+source ~/yb_support/kdl_parser_py/install/setup.bash
+source ~/yb_support/urdf_parser_py/install/setup.bash
+source ~/yb_support/my_msgs/install/setup.bash
+source ~/yb_support/slam_toolbox/install/setup.bash
+source ~/yb_support/pointcloud_to_laserscan/install/setup.bash
+source ~/yb_support/unilidar_sdk2/install/setup.bash
+
+#source ~/manip_ws/install/setup.bash
