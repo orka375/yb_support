@@ -13,6 +13,8 @@ namespace odrive_ros2_control {
 
 class Axis;
 
+class CanArd;
+
 class ODriveHardwareInterface final : public hardware_interface::SystemInterface {
 public:
     using return_type = hardware_interface::return_type;
@@ -44,6 +46,7 @@ private:
     bool active_;
     EpollEventLoop event_loop_;
     std::vector<Axis> axes_;
+    std::vector<CanArd> ards_;
     std::string can_intf_name_;
     SocketCanIntf can_intf_;
     rclcpp::Time timestamp_;
@@ -106,6 +109,48 @@ struct Axis {
     }
 };
 
+
+
+
+
+
+struct CanArd {
+    CanArd(SocketCanIntf* can_intf, uint32_t node_id, int32_t transmission, std::string name)
+    : can_intf_(can_intf), node_id_(node_id), transmission_(transmission), name_(std::move(name)) {}
+
+  
+    void on_can_msg(const rclcpp::Time& timestamp, const can_frame& frame);
+
+    void on_can_msg();
+
+    SocketCanIntf* can_intf_;
+    uint32_t node_id_;
+    std::string name_;
+    // Commands (ros2_control => ODrives)
+    double gap_setpoint_ = 0.0f; // [rad]
+
+
+    double transmission_ = 0.0f;
+
+    double gap = NAN; // [rad]
+
+
+    bool pos_input_enabled_ = false;
+    bool vel_input_enabled_ = false;
+    bool torque_input_enabled_ = false;
+
+    template <typename T>
+    void send(const T& msg) const {
+        struct can_frame frame;
+        frame.can_id = node_id_ << 5 | msg.cmd_id;
+        frame.can_dlc = msg.msg_length;
+        msg.encode_buf(frame.data);
+
+        can_intf_->send_can_frame(frame);
+    }
+};
+
+
 } // namespace odrive_ros2_control
 
 using namespace odrive_ros2_control;
@@ -121,8 +166,13 @@ CallbackReturn ODriveHardwareInterface::on_init(const hardware_interface::Hardwa
     can_intf_name_ = info_.hardware_parameters["can"];
 
     for (auto& joint : info_.joints) {
-        axes_.emplace_back(&can_intf_, std::stoi(joint.parameters.at("node_id")),std::stoi(joint.parameters.at("transmission")),joint.name);
-      
+        if (joint.name=="gripper_finger_joint_l"){
+            ards_.emplace_back(&can_intf_, std::stoi(joint.parameters.at("node_id")),std::stoi(joint.parameters.at("transmission")),joint.name);
+        }
+        else{
+            axes_.emplace_back(&can_intf_, std::stoi(joint.parameters.at("node_id")),std::stoi(joint.parameters.at("transmission")),joint.name);
+        }
+  
     }
 
 
@@ -176,9 +226,20 @@ CallbackReturn ODriveHardwareInterface::on_deactivate(const State&) {
 
 std::vector<hardware_interface::StateInterface> ODriveHardwareInterface::export_state_interfaces() {
     std::vector<hardware_interface::StateInterface> state_interfaces;
-
+    int c = 0;
     for (size_t i = 0; i < info_.joints.size(); i++) {
-        state_interfaces.emplace_back(hardware_interface::StateInterface(
+
+        if (info_.joints[i].name=="gripper_finger_joint_l"){
+
+            state_interfaces.emplace_back(hardware_interface::StateInterface(
+                info_.joints[i].name,
+                hardware_interface::HW_IF_POSITION,
+                &ards_[c].gap
+            ));
+            c++;
+        }
+        else{
+            state_interfaces.emplace_back(hardware_interface::StateInterface(
             info_.joints[i].name,
             hardware_interface::HW_IF_EFFORT,
             &axes_[i].torque_target_
@@ -193,6 +254,8 @@ std::vector<hardware_interface::StateInterface> ODriveHardwareInterface::export_
             hardware_interface::HW_IF_POSITION,
             &axes_[i].pos_estimate_
         ));
+        }
+        
     }
 
     return state_interfaces;
@@ -201,22 +264,34 @@ std::vector<hardware_interface::StateInterface> ODriveHardwareInterface::export_
 std::vector<hardware_interface::CommandInterface> ODriveHardwareInterface::export_command_interfaces() {
     std::vector<hardware_interface::CommandInterface> command_interfaces;
 
+    int c = 0;
     for (size_t i = 0; i < info_.joints.size(); i++) {
-        command_interfaces.emplace_back(hardware_interface::CommandInterface(
-            info_.joints[i].name,
-            hardware_interface::HW_IF_EFFORT,
-            &axes_[i].torque_setpoint_
-        ));
-        command_interfaces.emplace_back(hardware_interface::CommandInterface(
-            info_.joints[i].name,
-            hardware_interface::HW_IF_VELOCITY,
-            &axes_[i].vel_setpoint_
-        ));
-        command_interfaces.emplace_back(hardware_interface::CommandInterface(
-            info_.joints[i].name,
-            hardware_interface::HW_IF_POSITION,
-            &axes_[i].pos_setpoint_
-        ));
+
+        if (info_.joints[i].name=="gripper_finger_joint_l"){
+
+            command_interfaces.emplace_back(hardware_interface::CommandInterface(
+                info_.joints[i].name,
+                hardware_interface::HW_IF_POSITION,
+                &ards_[c].gap_setpoint_
+            ));
+            c++;
+        }
+        else{
+            command_interfaces.emplace_back(hardware_interface::CommandInterface(
+                info_.joints[i].name,
+                hardware_interface::HW_IF_EFFORT,
+                &axes_[i].torque_setpoint_
+            ));
+            command_interfaces.emplace_back(hardware_interface::CommandInterface(
+                info_.joints[i].name,
+                hardware_interface::HW_IF_VELOCITY,
+                &axes_[i].vel_setpoint_
+            ));
+            command_interfaces.emplace_back(hardware_interface::CommandInterface(
+                info_.joints[i].name,
+                hardware_interface::HW_IF_POSITION,
+                &axes_[i].pos_setpoint_
+            ));
     }
 
     return command_interfaces;
@@ -300,6 +375,16 @@ return_type ODriveHardwareInterface::write(const rclcpp::Time&, const rclcpp::Du
         }
     }
 
+    for (auto& ard : ards_) {
+
+        Set_Gap_Pos_msg_t msg;
+        msg.Gap = ard.gap_setpoint_ * ard.transmission_;
+        ard.send(msg);
+    }
+    
+
+
+
     return return_type::OK;
 }
 
@@ -307,6 +392,12 @@ void ODriveHardwareInterface::on_can_msg(const can_frame& frame) {
     for (auto& axis : axes_) {
         if ((frame.can_id >> 5) == axis.node_id_) {
             axis.on_can_msg(timestamp_, frame);
+        }
+    }
+
+    for (auto& ard : ards_) {
+        if ((frame.can_id >> 5) == ard.node_id_) {
+            ard.on_can_msg(timestamp_, frame);
         }
     }
 }
@@ -385,6 +476,35 @@ void Axis::on_can_msg(const rclcpp::Time&, const can_frame& frame) {
             }
         } break;
             // silently ignore unimplemented command IDs
+    }
+}
+
+
+void CanArd::on_can_msg(const rclcpp::Time&, const can_frame& frame) {
+    uint8_t cmd = frame.can_id & 0x1f;
+
+    auto try_decode = [&]<typename TMsg>(TMsg& msg) {
+        if (frame.can_dlc < Get_Encoder_Estimates_msg_t::msg_length) {
+            RCLCPP_WARN(rclcpp::get_logger("ODriveHardwareInterface"), "message %d too short", cmd);
+            return false;
+        }
+        msg.decode_buf(frame.data);
+        return true;
+    };
+
+    switch (cmd) {
+        case Get_Gap_msg_t::cmd_id: {
+            if (Get_Gap_msg_t msg; try_decode(msg)) {
+                double gap = msg.Gap * this->transmission_; 
+            }
+        } break;
+        // case Get_Torques_msg_t::cmd_id: {
+        //     if (Get_Torques_msg_t msg; try_decode(msg)) {
+        //         torque_target_ = msg.Torque_Target;
+        //         torque_estimate_ = msg.Torque_Estimate;
+        //     }
+        // } break;
+
     }
 }
 

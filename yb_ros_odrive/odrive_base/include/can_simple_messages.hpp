@@ -292,6 +292,50 @@ struct Set_Controller_Mode_msg_t final {
     uint32_t Input_Mode = 0;
 };
 
+
+//---------------------------------------------------------nbf2
+
+
+
+struct Set_Gap_Pos_msg_t final {
+    constexpr Set_Gap_Pos_msg_t() = default;
+
+#ifdef ODRIVE_CAN_MSG_TYPE
+    Set_Gap_Pos_msg_t(const TBoard::TCanIntf::TMsg& msg) {
+        decode_msg(msg);
+    }
+
+    void encode_msg(TBoard::TCanIntf::TMsg& msg) {
+        encode_buf(can_msg_get_payload(msg).data());
+    }
+
+    void decode_msg(const TBoard::TCanIntf::TMsg& msg) {
+        decode_buf(can_msg_get_payload(msg).data());
+    }
+#endif
+
+    void encode_buf(uint8_t* buf) const {
+        can_set_signal_raw<float>(buf, Gap, 0, 32, true);
+ 
+    }
+
+    void decode_buf(const uint8_t* buf) {
+        Gap = can_get_signal_raw<float>(buf, 0, 32, true);
+    }
+
+    static const uint8_t cmd_id = 0x038;
+    static const uint8_t msg_length = 8;
+    
+    float Gap = 0.0f; // [rev]
+};
+
+
+//---------------------------------------------------------nbf2
+
+
+
+
+
 struct Set_Input_Pos_msg_t final {
     constexpr Set_Input_Pos_msg_t() = default;
 
@@ -817,6 +861,50 @@ struct Get_Torques_msg_t final {
     float Torque_Target = 0.0f; // [Nm]
     float Torque_Estimate = 0.0f; // [Nm]
 };
+
+
+//-----------------------------------------------------------------------------nbf2
+
+struct Get_Gap_msg_t final {
+    constexpr Get_Gap_msg_t() = default;
+
+#ifdef ODRIVE_CAN_MSG_TYPE
+    Get_Gap_msg_t(const TBoard::TCanIntf::TMsg& msg) {
+        decode_msg(msg);
+    }
+
+    void encode_msg(TBoard::TCanIntf::TMsg& msg) {
+        encode_buf(can_msg_get_payload(msg).data());
+    }
+
+    void decode_msg(const TBoard::TCanIntf::TMsg& msg) {
+        decode_buf(can_msg_get_payload(msg).data());
+    }
+#endif
+
+    void encode_buf(uint8_t* buf) const {
+        can_set_signal_raw<float>(buf, Gap, 0, 32, true);
+    }
+
+    void decode_buf(const uint8_t* buf) {
+        Gap = can_get_signal_raw<float>(buf, 0, 32, true);
+    }
+
+    static const uint8_t cmd_id = 0x037;
+    static const uint8_t msg_length = 8;
+    
+    float Gap = 0.0f; // [mm]
+};
+
+
+
+
+
+
+//-----------------------------------------------------------------------------nbf2
+
+
+
 
 struct Get_Powers_msg_t final {
     constexpr Get_Powers_msg_t() = default;
