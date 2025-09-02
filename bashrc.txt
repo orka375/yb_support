@@ -1,6 +1,6 @@
 source /opt/ros/rolling/setup.bash
 source ~/youbot_ws/install/setup.bash
-source ~/yb_support/yb_ros_odrive/install/setup.bash
+source ~/yb_support/ros_odrive/install/setup.bash
 source ~/yb_support/mecanum_drive_controller/install/setup.bash
 source ~/yb_support/twist_stamper/install/setup.bash
 source ~/yb_support/kdl_parser_py/install/setup.bash
