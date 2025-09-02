@@ -292,7 +292,9 @@ std::vector<hardware_interface::CommandInterface> ODriveHardwareInterface::expor
                 hardware_interface::HW_IF_POSITION,
                 &axes_[i].pos_setpoint_
             ));
+        }
     }
+
 
     return command_interfaces;
 }
