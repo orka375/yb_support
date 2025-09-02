@@ -102,17 +102,13 @@ struct Axis {
     void send(const T& msg) const {
         struct can_frame frame;
         frame.can_id = node_id_ << 5 | msg.cmd_id;
+        // frame.can_id = msg.cmd_id;
         frame.can_dlc = msg.msg_length;
         msg.encode_buf(frame.data);
 
         can_intf_->send_can_frame(frame);
     }
 };
-
-
-
-
-
 
 struct CanArd {
     CanArd(SocketCanIntf* can_intf, uint32_t node_id, int32_t transmission, std::string name)
@@ -130,9 +126,10 @@ struct CanArd {
     double gap_setpoint_ = 0.0f; // [rad]
 
 
-    double transmission_ = 0.0f;
+    float transmission_ = 0.0f;
 
     double gap = NAN; // [rad]
+    double gap_vel = NAN;
 
 
     bool pos_input_enabled_ = false;
@@ -142,7 +139,8 @@ struct CanArd {
     template <typename T>
     void send(const T& msg) const {
         struct can_frame frame;
-        frame.can_id = node_id_ << 5 | msg.cmd_id;
+        // frame.can_id = node_id_ << 5 | msg.cmd_id;
+        frame.can_id = msg.cmd_id;
         frame.can_dlc = msg.msg_length;
         msg.encode_buf(frame.data);
 
@@ -168,9 +166,11 @@ CallbackReturn ODriveHardwareInterface::on_init(const hardware_interface::Hardwa
     for (auto& joint : info_.joints) {
         if (joint.name=="gripper_finger_joint_l"){
             ards_.emplace_back(&can_intf_, std::stoi(joint.parameters.at("node_id")),std::stoi(joint.parameters.at("transmission")),joint.name);
+            RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "ARDS added %s", can_intf_name_.c_str());
         }
         else{
             axes_.emplace_back(&can_intf_, std::stoi(joint.parameters.at("node_id")),std::stoi(joint.parameters.at("transmission")),joint.name);
+            RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "AXES added %s", can_intf_name_.c_str());
         }
   
     }
@@ -236,6 +236,12 @@ std::vector<hardware_interface::StateInterface> ODriveHardwareInterface::export_
                 hardware_interface::HW_IF_POSITION,
                 &ards_[c].gap
             ));
+
+            state_interfaces.emplace_back(hardware_interface::StateInterface(
+                info_.joints[i].name,
+                hardware_interface::HW_IF_VELOCITY,
+                &ards_[c].gap_vel
+            ));
             c++;
         }
         else{
@@ -292,7 +298,7 @@ std::vector<hardware_interface::CommandInterface> ODriveHardwareInterface::expor
                 hardware_interface::HW_IF_POSITION,
                 &axes_[i].pos_setpoint_
             ));
-        }
+        };
     }
 
 
@@ -380,7 +386,7 @@ return_type ODriveHardwareInterface::write(const rclcpp::Time&, const rclcpp::Du
     for (auto& ard : ards_) {
 
         Set_Gap_Pos_msg_t msg;
-        msg.Gap = ard.gap_setpoint_ * ard.transmission_;
+        msg.Gap = ard.gap_setpoint_; //* ard.transmission_;
         ard.send(msg);
     }
     
@@ -391,6 +397,9 @@ return_type ODriveHardwareInterface::write(const rclcpp::Time&, const rclcpp::Du
 }
 
 void ODriveHardwareInterface::on_can_msg(const can_frame& frame) {
+    // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "on can msg %X", frame.can_id);
+    // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "--> should node hex %X", (frame.can_id >> 5));
+    // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "--> should node dec %d", (frame.can_id >> 5));
     for (auto& axis : axes_) {
         if ((frame.can_id >> 5) == axis.node_id_) {
             axis.on_can_msg(timestamp_, frame);
@@ -481,7 +490,6 @@ void Axis::on_can_msg(const rclcpp::Time&, const can_frame& frame) {
     }
 }
 
-
 void CanArd::on_can_msg(const rclcpp::Time&, const can_frame& frame) {
     uint8_t cmd = frame.can_id & 0x1f;
 
@@ -490,6 +498,7 @@ void CanArd::on_can_msg(const rclcpp::Time&, const can_frame& frame) {
             RCLCPP_WARN(rclcpp::get_logger("ODriveHardwareInterface"), "message %d too short", cmd);
             return false;
         }
+        // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "ON CAN MSG %s", "");
         msg.decode_buf(frame.data);
         return true;
     };
@@ -497,7 +506,8 @@ void CanArd::on_can_msg(const rclcpp::Time&, const can_frame& frame) {
     switch (cmd) {
         case Get_Gap_msg_t::cmd_id: {
             if (Get_Gap_msg_t msg; try_decode(msg)) {
-                double gap = msg.Gap * this->transmission_; 
+                gap = msg.Gap * this->transmission_; 
+                // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "got gap %s","");
             }
         } break;
         // case Get_Torques_msg_t::cmd_id: {

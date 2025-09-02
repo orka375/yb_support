@@ -315,15 +315,15 @@ struct Set_Gap_Pos_msg_t final {
 #endif
 
     void encode_buf(uint8_t* buf) const {
-        can_set_signal_raw<float>(buf, Gap, 0, 32, true);
+        can_set_signal_raw<uint8_t>(buf, Gap, 0, 32, false);
  
     }
 
     void decode_buf(const uint8_t* buf) {
-        Gap = can_get_signal_raw<float>(buf, 0, 32, true);
+        Gap = can_get_signal_raw<uint8_t>(buf, 0, 32, false);
     }
 
-    static const uint8_t cmd_id = 0x038;
+    static const uint8_t cmd_id = 0x05;
     static const uint8_t msg_length = 8;
     
     float Gap = 0.0f; // [rev]
@@ -890,7 +890,7 @@ struct Get_Gap_msg_t final {
         Gap = can_get_signal_raw<float>(buf, 0, 32, true);
     }
 
-    static const uint8_t cmd_id = 0x037;
+    static const uint8_t cmd_id = 0x004;
     static const uint8_t msg_length = 8;
     
     float Gap = 0.0f; // [mm]
