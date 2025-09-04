@@ -68,11 +68,11 @@ void loop() {
   }
 
   // ----- Periodic position send -----
-    // unsigned long now = millis();
-    // if (now - lastSendTime >= SEND_INTERVAL) {
-    //   SendPosition();
-    //   lastSendTime = now;
-    // }
+    unsigned long now = millis();
+    if (now - lastSendTime >= SEND_INTERVAL) {
+      SendPosition();
+      lastSendTime = now;
+    }
 }
 
 // ---------- Stepper Control ----------

@@ -138,15 +138,15 @@ struct CanArd {
 
     template <typename T>
     void send(const T& msg) const {
-        struct can_frame frame;
-        frame.can_id = node_id_ << 5 | msg.cmd_id;
-        // frame.can_id = msg.cmd_id;
-        frame.can_dlc = msg.msg_length;
-        msg.encode_buf(frame.data);
-        // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "CAN ID: %X",frame.can_id);
-        // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "CAN ID: %d",frame.can_id);
-        // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "CONTENT: %X",frame.data);
-        can_intf_->send_can_frame(frame);
+        // struct can_frame frame;
+        // frame.can_id = node_id_ << 5 | msg.cmd_id;
+        // // frame.can_id = msg.cmd_id;
+        // frame.can_dlc = msg.msg_length;
+        // msg.encode_buf(frame.data);
+        // // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "CAN ID: %X",frame.can_id);
+        // // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "CAN ID: %d",frame.can_id);
+        // // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "CONTENT: %X",frame.data);
+        // can_intf_->send_can_frame(frame);
     }
 };
 
@@ -239,11 +239,11 @@ std::vector<hardware_interface::StateInterface> ODriveHardwareInterface::export_
                 &ards_[c].gap
             ));
 
-            // state_interfaces.emplace_back(hardware_interface::StateInterface(
-            //     info_.joints[i].name,
-            //     hardware_interface::HW_IF_VELOCITY,
-            //     &ards_[c].gap_vel
-            // ));
+            state_interfaces.emplace_back(hardware_interface::StateInterface(
+                info_.joints[i].name,
+                hardware_interface::HW_IF_VELOCITY,
+                &ards_[c].gap_vel
+            ));
             c++;
         }
         else{
@@ -282,6 +282,8 @@ std::vector<hardware_interface::CommandInterface> ODriveHardwareInterface::expor
                 hardware_interface::HW_IF_POSITION,
                 &ards_[c].gap_setpoint_
             ));
+
+            
             c++;
         }
         else{
@@ -389,7 +391,7 @@ return_type ODriveHardwareInterface::write(const rclcpp::Time&, const rclcpp::Du
 
         Set_Gap_Pos_msg_t msg;
         msg.Gap = ard.gap_setpoint_; //* ard.transmission_;
-        RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "Sending GAP SETPOINT: %f" ,ard.gap_setpoint_);
+        // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "Sending GAP SETPOINT: %f" ,ard.gap_setpoint_);
         ard.send(msg);
     }
     
@@ -472,11 +474,11 @@ void Axis::on_can_msg(const rclcpp::Time&, const can_frame& frame) {
                 double pos = msg.Pos_Estimate * (2 * M_PI) /this->transmission_;  //nbf2 /26 = transmission
                 double vel = msg.Vel_Estimate * (2 * M_PI) /this->transmission_;  //nbf2 /26 = transmission
 
-                // // Invert for front right and back right  //nbf2
-                // if (name_ == "wheel_joint_fr" || name_ == "wheel_joint_br") {
-                //     pos *= -1.0;
-                //     vel *= -1.0;
-                // }
+                // Invert for front right and back right  //nbf2
+                if (name_ == "wheel_joint_fr" || name_ == "wheel_joint_br") {
+                    pos *= -1.0;
+                    vel *= -1.0;
+                }
 
                 pos_estimate_ = pos;
                 vel_estimate_ = vel;

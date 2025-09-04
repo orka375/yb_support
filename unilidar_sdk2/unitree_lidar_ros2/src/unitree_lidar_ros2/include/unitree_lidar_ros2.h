@@ -21,6 +21,8 @@
 #include "sensor_msgs/msg/point_cloud2.hpp"
 #include "sensor_msgs/msg/imu.hpp"
 #include "std_msgs/msg/header.hpp"
+#include "std_srvs/srv/set_bool.hpp"
+
 
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp/time.hpp"
@@ -43,11 +45,15 @@ public:
     ~UnitreeLidarSDKNode() {};
 
     void timer_callback();
+    void toggle_lidar_callback(const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
+    std::shared_ptr<std_srvs::srv::SetBool::Response> response);
 
 protected:
     // ROS
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub_cloud_;
     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr pub_imu_;
+    rclcpp::Service<std_srvs::srv::SetBool>::SharedPtr lidar_toggle_service_;
+
     rclcpp::TimerBase::SharedPtr timer_;
     std::shared_ptr<tf2_ros::TransformBroadcaster> broadcaster_;
 
@@ -152,8 +158,47 @@ UnitreeLidarSDKNode::UnitreeLidarSDKNode(const rclcpp::NodeOptions &options)
     broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(*this);
     pub_cloud_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(cloud_topic_, 10);
     pub_imu_ = this->create_publisher<sensor_msgs::msg::Imu>(imu_topic_, 10);
+
+    lidar_toggle_service_ = this->create_service<std_srvs::srv::SetBool>("toggle_lidar",
+        std::bind(&UnitreeLidarSDKNode::toggle_lidar_callback, this,std::placeholders::_1,std::placeholders::_2));
+
+ 
     timer_ = this->create_wall_timer(std::chrono::milliseconds(1), std::bind(&UnitreeLidarSDKNode::timer_callback, this));
 }
+
+
+
+void UnitreeLidarSDKNode::toggle_lidar_callback(
+    const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
+    std::shared_ptr<std_srvs::srv::SetBool::Response> response)
+{
+    if (lsdk_ == nullptr)
+    {
+        response->success = false;
+        response->message = "LiDAR SDK instance is null";
+        RCLCPP_WARN(this->get_logger(), "Cannot toggle LiDAR: SDK instance is null");
+        return;
+    }
+
+    if (request->data)
+    {
+        // Turn LiDAR rotation ON
+        lsdk_->startLidarRotation();
+        response->success = true;
+        response->message = "LiDAR rotation started";
+        RCLCPP_INFO(this->get_logger(), "LiDAR rotation started");
+    }
+    else
+    {
+        // Turn LiDAR rotation OFF
+        lsdk_->stopLidarRotation();
+        response->success = true;
+        response->message = "LiDAR rotation stopped";
+        RCLCPP_INFO(this->get_logger(), "LiDAR rotation stopped");
+    }
+}
+
+
 
 void UnitreeLidarSDKNode::timer_callback()
 {

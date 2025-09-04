@@ -5,5 +5,6 @@
         "chrono": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/nbf2/yb_support/ros_odrive/odrive_node"
 }

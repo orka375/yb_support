@@ -1,0 +1,27 @@
+digraph G {
+"map" -> "cloud"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_link_0" -> "arm_link_1"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"base_link" -> "arm_link_0"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_link_1" -> "arm_link_2"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"arm_link_2" -> "arm_link_3"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"arm_link_3" -> "arm_link_4"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"arm_link_4" -> "arm_link_5"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"gripper_palm_link" -> "gripper_finger_link_l"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"arm_link_5" -> "gripper_palm_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"gripper_palm_link" -> "gripper_finger_link_r"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"base_link" -> "wheel_link_bl"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 28.966\nBuffer length: 4.833\nMost recent transform: 1757010708.723533\nOldest transform: 1757010703.890241\n"];
+"base_link" -> "wheel_link_br"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"base_link" -> "wheel_link_fl"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"base_link" -> "wheel_link_fr"[label=" Broadcaster: default_authority\nAverage rate: 14.6\nBuffer length: 5.0\nMost recent transform: 1757010708.723629\nOldest transform: 1757010703.723649\n"];
+"base_link" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "chassis"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"lidar_link_initial" -> "lidar_link"[label=" Broadcaster: default_authority\nAverage rate: 592.175\nBuffer length: 4.931\nMost recent transform: 1757010708.743864\nOldest transform: 1757010703.812891\n"];
+"arm_link_5" -> "pen"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "plate_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"lidar_link" -> "unilidar_lidar"[label=" Broadcaster: default_authority\nAverage rate: 591.972\nBuffer length: 4.931\nMost recent transform: 1757010708.743864\nOldest transform: 1757010703.812891\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1757010708.75992"[ shape=plaintext ] ;
+}->"lidar_link_initial";
+}
