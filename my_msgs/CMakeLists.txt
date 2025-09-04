@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/Pose2D.msg"
 	"msg/PoseStampedJoints.msg"
 	"srv/SavePose.srv"
+  "srv/SetInt32.srv"
 	DEPENDENCIES std_msgs
 	DEPENDENCIES geometry_msgs
 	DEPENDENCIES std_srvs
