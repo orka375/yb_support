@@ -1,0 +1,9 @@
+# Goal
+string scriptname  # the motion or task to execute
+---
+# Result
+bool success
+string message
+---
+# Feedback
+string status

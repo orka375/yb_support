@@ -15,11 +15,13 @@ find_package(geometry_msgs REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+
 rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/Pose2D.msg"
 	"msg/PoseStampedJoints.msg"
 	"srv/SavePose.srv"
   "srv/SetInt32.srv"
+  "action/ExecuteMotion.action"
 	DEPENDENCIES std_msgs
 	DEPENDENCIES geometry_msgs
 	DEPENDENCIES std_srvs

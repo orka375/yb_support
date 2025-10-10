@@ -17,7 +17,7 @@ int targetPosMM = 0.0;            // target absolute pos [mm]
 unsigned char canMessage[8];
 
 // CAN IDs
-const int CAN_ID_REC_TARGET = 0x2E5;
+const int CAN_ID_REC_TARGET = 0x2E0;
 const int CAN_ID_SEND_POS   = 0x2E4;
 const int CAN_ID_HOME       = 0x2E8;
 
