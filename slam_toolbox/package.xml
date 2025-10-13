@@ -12,7 +12,6 @@
   <author>Steve Macenski</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <depend>my_msgs</depend>
 
   <build_depend>pluginlib</build_depend>
   <build_depend>eigen</build_depend>
@@ -30,7 +29,6 @@
   <build_depend>std_msgs</build_depend>
   <build_depend>suitesparse</build_depend>
   <build_depend>liblapack-dev</build_depend>
-  <build_depend>libomp-dev</build_depend>
   <build_depend>libceres-dev</build_depend>
   <build_depend>tf2_geometry_msgs</build_depend>
   <build_depend>tbb</build_depend>
@@ -41,7 +39,6 @@
   <build_depend>rosidl_default_generators</build_depend>
   <build_depend>lifecycle_msgs</build_depend>
   <build_depend>bondcpp</build_depend>
-  
   <build_depend>bond</build_depend>
   <build_depend>rclcpp_lifecycle</build_depend>
   <depend>rviz_common</depend>
@@ -64,7 +61,6 @@
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>suitesparse</exec_depend>
   <exec_depend>liblapack-dev</exec_depend>
-  <exec_depend>libomp-dev</exec_depend>
   <exec_depend>libceres-dev</exec_depend>
   <exec_depend>tf2_geometry_msgs</exec_depend>
   <exec_depend>tbb</exec_depend>

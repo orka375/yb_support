@@ -20,7 +20,7 @@
 #include "rviz_plugin/slam_toolbox_rviz_plugin.hpp"
 // ROS
 #include <tf2_ros/transform_listener.h>
-#include <tf2/convert.hpp>
+#include <tf2/convert.h>
 // QT
 #include <QPushButton>
 #include <QCheckBox>

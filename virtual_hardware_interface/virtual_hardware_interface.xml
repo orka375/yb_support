@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<library path="virtual_hardware_interface">
+  <class
+    name="virtual_hardware_interface/VirtualHardwareInterface"
+    type="VirtualHardwareInterface"
+    base_class_type="hardware_interface::SystemInterface"/>
+</library>

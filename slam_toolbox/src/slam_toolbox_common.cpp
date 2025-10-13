@@ -433,7 +433,7 @@ void SlamToolbox::setROSInterfaces()
 /*****************************************************************************/
 {
   pose_pub_ = this->create_publisher<geometry_msgs::msg::PoseWithCovarianceStamped>(
-    "pose", rclcpp::QoS(rclcpp::KeepLast(1)).transient_local().reliable());
+    "pose", 10);
   sst_ = this->create_publisher<nav_msgs::msg::OccupancyGrid>(
     map_name_, rclcpp::QoS(rclcpp::KeepLast(1)).transient_local().reliable());
   sstm_ = this->create_publisher<nav_msgs::msg::MapMetaData>(
@@ -461,7 +461,8 @@ void SlamToolbox::setROSInterfaces()
     std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 
   scan_filter_sub_ =
-    std::make_unique<message_filters::Subscriber<sensor_msgs::msg::LaserScan>>(
+    std::make_unique<message_filters::Subscriber<sensor_msgs::msg::LaserScan,
+      rclcpp_lifecycle::LifecycleNode>>(
     shared_from_this().get(), scan_topic_, rclcpp::SensorDataQoS());
   scan_filter_ =
     std::make_unique<tf2_ros::MessageFilter<sensor_msgs::msg::LaserScan>>(
@@ -544,7 +545,7 @@ void SlamToolbox::loadPoseGraphByParams()
 /*****************************************************************************/
 {
   std::string filename;
-  slam_toolbox::msg::Pose2D pose;
+  geometry_msgs::msg::Pose2D pose;
   bool dock = false;
   if (shouldStartWithPoseGraph(filename, pose, dock)) {
     std::shared_ptr<slam_toolbox::srv::DeserializePoseGraph::Request> req =
@@ -568,7 +569,7 @@ void SlamToolbox::loadPoseGraphByParams()
 /*****************************************************************************/
 bool SlamToolbox::shouldStartWithPoseGraph(
   std::string & filename,
-  slam_toolbox::msg::Pose2D & pose, bool & start_at_dock)
+  geometry_msgs::msg::Pose2D & pose, bool & start_at_dock)
 /*****************************************************************************/
 {
   // if given a map to load at run time, do it.
