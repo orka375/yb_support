@@ -111,7 +111,7 @@ struct Axis {
 };
 
 struct CanArd {
-    CanArd(SocketCanIntf* can_intf, uint32_t node_id, int32_t transmission, std::string name)
+    CanArd(SocketCanIntf* can_intf, uint32_t node_id,  double transmission, std::string name)
     : can_intf_(can_intf), node_id_(node_id), transmission_(transmission), name_(std::move(name)) {}
 
   
@@ -126,7 +126,7 @@ struct CanArd {
     double gap_setpoint_ = 0.0f; // [rad]
 
 
-    float transmission_ = 0.0f;
+    double transmission_ = 0.0f;
 
     double gap = NAN; // [rad]
     double gap_vel = NAN;
@@ -511,8 +511,8 @@ void CanArd::on_can_msg(const rclcpp::Time&, const can_frame& frame) {
     switch (cmd) {
         case Get_Gap_msg_t::cmd_id: {
             if (Get_Gap_msg_t msg; try_decode(msg)) {
-                gap = msg.Gap * this->transmission_; 
-                // RCLCPP_INFO(rclcpp::get_logger("ODriveHardwareInterface"), "got gap %s","");
+                gap = msg.Gap / transmission_;   //!!!!nbf2 m to mm, expecting ratio of 1000
+   
             }
         } break;
         // case Get_Torques_msg_t::cmd_id: {
