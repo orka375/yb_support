@@ -42,11 +42,22 @@ class UnitreeLidarSDKNode : public rclcpp::Node
 public:
     explicit UnitreeLidarSDKNode(const rclcpp::NodeOptions &options = rclcpp::NodeOptions());
 
-    ~UnitreeLidarSDKNode() {};
+    ~UnitreeLidarSDKNode() {onNodeShutDown();};
 
     void timer_callback();
     void toggle_lidar_callback(const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
     std::shared_ptr<std_srvs::srv::SetBool::Response> response);
+
+private:
+    void onNodeShutDown()
+    {
+        if (lsdk_ != nullptr)
+        {
+            lsdk_->stopLidarRotation();
+            delete lsdk_;
+            lsdk_ = nullptr;
+        }
+    }
 
 protected:
     // ROS

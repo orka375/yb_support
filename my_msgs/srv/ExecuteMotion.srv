@@ -1,0 +1,8 @@
+# ExecuteMotion.srv
+string component      # ARM, BASE, or ROBOT
+string step_name     # Name of the motion step
+string goal_type     # configuration, pose, state, or savedpose
+string goal_value    # The actual goal value
+---
+bool success         # Whether the motion was successful
+string message      # Status message or error description

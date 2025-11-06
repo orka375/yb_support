@@ -21,7 +21,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/PoseStampedJoints.msg"
 	"srv/SavePose.srv"
   "srv/SetInt32.srv"
-  "action/ExecuteMotion.action"
+  "srv/ExecuteMotion.srv"
+  "action/ExecuteScript.action"
 	DEPENDENCIES std_msgs
 	DEPENDENCIES geometry_msgs
 	DEPENDENCIES std_srvs
