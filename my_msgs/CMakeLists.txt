@@ -28,6 +28,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 	DEPENDENCIES std_srvs
 )
 
+ament_export_dependencies(
+  rosidl_default_runtime
+)
+
 
 
 if(BUILD_TESTING)
