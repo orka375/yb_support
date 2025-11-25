@@ -78,7 +78,7 @@ private:
         {
             bool success;
             std::string msg;
-            std::tie(success, msg) = run_motion_step(request->component, request->goal_type, request->goal_value);
+            std::tie(success, msg) = run_motion_step(request->component, request->goal_type, request->goal_value, request->goal_pose);
 
             response->success = success;
             response->message = msg;
@@ -93,7 +93,8 @@ private:
 
     std::pair<bool, std::string> run_motion_step(const std::string &component,
                                                  const std::string &goal_type,
-                                                 const std::string &goal_value)
+                                                 const std::string &goal_value,
+                                                 const geometry_msgs::msg::PoseStamped &goal_pose)
     {
         std::shared_ptr<moveit::planning_interface::MoveGroupInterface> group;
         if (component == "ARM")
@@ -122,6 +123,11 @@ private:
                 return {false, "Pose transformation failed"};
 
             group->setPoseTarget(*transformed);
+        }
+
+        else if (goal_type == "pose")
+        {
+            group->setPoseTarget(goal_pose);
         }
         else
         {
