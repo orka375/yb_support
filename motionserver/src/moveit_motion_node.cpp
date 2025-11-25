@@ -149,7 +149,7 @@ private:
         latest_joint_state_ = msg;
     }
 
-    bool wait_for_arm_joints_stopped(double velocity_threshold = 0.01, double timeout_sec = 10.0)
+    bool wait_for_arm_joints_stopped(double velocity_threshold = 0.5, double timeout_sec = 10.0)
     {
         auto start_time = this->now();
         rclcpp::Rate rate(10); // Check at 10 Hz
